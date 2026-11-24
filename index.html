@@ -1,0 +1,2879 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>유튜브 롱폼 초고속 수익창출 가이드 🚀</title>
+  <style>
+    :root {
+      --bg: #f6f8fc;
+      --surface: #ffffff;
+      --surface-soft: #f0f4ff;
+      --text: #1b2432;
+      --text-sub: #4b5565;
+      --text-muted: #6b7280;
+      --border: #e3e8f2;
+      --primary: #2563eb;
+      --primary-light: #dbeafe;
+      --accent: #f59e0b;
+      --accent-bg: #fffbeb;
+      --danger: #dc2626;
+      --danger-bg: #fef2f2;
+      --danger-border: #fecaca;
+      --green: #16a34a;
+      --green-bg: #f0fdf4;
+      --orange: #ea580c;
+      --orange-bg: #fff7ed;
+      --yellow: #ca8a04;
+      --yellow-bg: #fefce8;
+      --purple: #7c3aed;
+      --purple-bg: #f5f3ff;
+      --radius: 20px;
+      --radius-sm: 14px;
+      --shadow: 0 8px 28px rgba(15, 23, 42, 0.06);
+      --shadow-hover: 0 12px 32px rgba(37, 99, 235, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.72;
+      font-size: 17px;
+      padding-bottom: 80px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 20px;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 52%, #4f46e5 100%);
+      color: #ffffff;
+      border-radius: 28px;
+      padding: 40px 36px;
+      box-shadow: 0 16px 40px rgba(37, 99, 235, 0.25);
+      margin-bottom: 28px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "🚀";
+      position: absolute;
+      right: 28px;
+      top: 22px;
+      font-size: 76px;
+      opacity: 0.16;
+      pointer-events: none;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .badge-glass {
+      background: rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      backdrop-filter: blur(6px);
+    }
+
+    .badge-status {
+      background: #fef08a;
+      color: #854d0e;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 4vw, 38px);
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 14px;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-sub {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.92);
+      max-width: 760px;
+    }
+
+    /* Metaphor Banner */
+    .metaphor-card {
+      background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+      border: 2px solid #fcd34d;
+      border-radius: var(--radius);
+      padding: 26px 28px;
+      margin-bottom: 32px;
+      box-shadow: var(--shadow);
+    }
+
+    .metaphor-title {
+      font-size: 20px;
+      font-weight: 900;
+      color: #92400e;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .metaphor-card p {
+      font-size: 17.5px;
+      color: #451a03;
+      margin-bottom: 10px;
+    }
+
+    .metaphor-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .status-strip {
+      margin-top: 14px;
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 14px 18px;
+      border: 1px dashed #f59e0b;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 15.5px;
+      color: #78350f;
+    }
+
+    .status-strip strong {
+      color: #b45309;
+    }
+
+    /* Quick Nav */
+    .quick-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .quick-nav a {
+      text-decoration: none;
+      background: var(--surface);
+      color: var(--text);
+      border: 1.5px solid var(--border);
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 15px;
+      transition: all 0.18s ease;
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+    }
+
+    .quick-nav a:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    /* Section Headers */
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 42px 0 20px;
+    }
+
+    .section-num {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      background: var(--primary);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+
+    .section-header h2 {
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+    }
+
+    /* Knowledge Cards */
+    .card {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-bottom: 22px;
+      box-shadow: var(--shadow);
+      transition: box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      box-shadow: var(--shadow-hover);
+    }
+
+    .card-head {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .card-pill {
+      background: var(--primary-light);
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 14px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .card h3 {
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    /* Grid layouts inside cards */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 16px;
+      margin-top: 14px;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .mini-box {
+      background: #f8fafc;
+      border: 1.5px solid #e2e8f0;
+      border-radius: var(--radius-sm);
+      padding: 18px;
+    }
+
+    .mini-box.blue {
+      background: #eff6ff;
+      border-color: #bfdbfe;
+    }
+
+    .mini-box.green {
+      background: var(--green-bg);
+      border-color: #bbf7d0;
+    }
+
+    .mini-box.purple {
+      background: var(--purple-bg);
+      border-color: #ddd6fe;
+    }
+
+    .mini-box.amber {
+      background: var(--accent-bg);
+      border-color: #fde68a;
+    }
+
+    .mini-box-title {
+      font-size: 17px;
+      font-weight: 800;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .mini-box p {
+      font-size: 15.5px;
+      color: var(--text-sub);
+    }
+
+    .big-math {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .math-chip {
+      flex: 1 1 260px;
+      background: linear-gradient(135deg, #eff6ff 0%, #e0e7ff 100%);
+      border: 1.5px solid #c7d2fe;
+      border-radius: 16px;
+      padding: 16px 20px;
+    }
+
+    .math-chip .label {
+      font-size: 14px;
+      font-weight: 700;
+      color: #4338ca;
+      margin-bottom: 4px;
+    }
+
+    .math-chip .value {
+      font-size: 20px;
+      font-weight: 900;
+      color: #1e1b4b;
+    }
+
+    .math-chip .desc {
+      font-size: 14.5px;
+      color: #3730a3;
+      margin-top: 2px;
+    }
+
+    /* Bullet list */
+    .nice-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .nice-list li {
+      background: #f8fafc;
+      border-radius: 12px;
+      padding: 13px 16px;
+      border-left: 4px solid var(--primary);
+      font-size: 16px;
+    }
+
+    .nice-list li strong {
+      color: #0f172a;
+    }
+
+    /* Thumbnail preview demo */
+    .thumb-demo {
+      margin-top: 14px;
+      background: #111827;
+      border-radius: 14px;
+      padding: 18px 20px;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .thumb-sample {
+      background: linear-gradient(135deg, #1f2937 0%, #0f172a 100%);
+      border: 2px solid #374151;
+      border-radius: 12px;
+      padding: 14px 20px;
+      text-align: center;
+      min-width: 220px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .thumb-line1 {
+      font-size: 20px;
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1.25;
+      letter-spacing: -0.04em;
+    }
+
+    .thumb-line2 {
+      font-size: 22px;
+      font-weight: 900;
+      color: #ff1e1e;
+      line-height: 1.25;
+      letter-spacing: -0.04em;
+      text-shadow: 0 2px 10px rgba(255, 30, 30, 0.35);
+    }
+
+    .thumb-tips {
+      flex: 1 1 280px;
+      font-size: 15px;
+      color: #e5e7eb;
+    }
+
+    /* Danger Card (Game Over 5) */
+    .danger-card {
+      background: var(--danger-bg);
+      border: 2.5px solid var(--danger-border);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 28px rgba(220, 38, 38, 0.08);
+    }
+
+    .danger-card .card-pill {
+      background: var(--danger);
+      color: #ffffff;
+    }
+
+    .danger-card h3 {
+      color: #991b1b;
+    }
+
+    .danger-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .danger-item {
+      background: #ffffff;
+      border: 1.5px solid #fecaca;
+      border-left: 6px solid var(--danger);
+      border-radius: 14px;
+      padding: 16px 18px;
+    }
+
+    .danger-item-title {
+      font-size: 17.5px;
+      font-weight: 800;
+      color: #991b1b;
+      margin-bottom: 5px;
+    }
+
+    .danger-item p {
+      font-size: 15.5px;
+      color: #374151;
+    }
+
+    .danger-item .safe-tip {
+      display: inline-block;
+      margin-top: 8px;
+      background: #f0fdf4;
+      color: #166534;
+      border: 1px solid #bbf7d0;
+      border-radius: 8px;
+      padding: 4px 10px;
+      font-size: 14.5px;
+      font-weight: 700;
+    }
+
+    /* Traffic Light Table */
+    .traffic-wrap {
+      margin-top: 18px;
+      overflow-x: auto;
+      border-radius: 16px;
+      border: 1.5px solid var(--border);
+      background: #ffffff;
+    }
+
+    .traffic-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 560px;
+    }
+
+    .traffic-table th {
+      background: #f1f5f9;
+      color: #334155;
+      font-weight: 800;
+      font-size: 15px;
+      text-align: left;
+      padding: 13px 16px;
+      border-bottom: 1.5px solid var(--border);
+    }
+
+    .traffic-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid #eef2f7;
+      font-size: 15.5px;
+      vertical-align: middle;
+    }
+
+    .traffic-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .light-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .light-red { background: #fee2e2; color: #b91c1c; }
+    .light-yellow { background: #fef9c3; color: #a16207; }
+    .light-orange { background: #ffedd5; color: #c2410c; }
+    .light-green { background: #dcfce7; color: #15803d; }
+    .light-fire { background: #ede9fe; color: #6d28d9; }
+
+    /* Interactive Checklist */
+    .progress-box {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .progress-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .progress-label {
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .progress-pct {
+      color: var(--primary);
+      font-weight: 900;
+      font-size: 20px;
+    }
+
+    .progress-bar-bg {
+      height: 14px;
+      background: #e2e8f0;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #2563eb, #16a34a);
+      border-radius: 999px;
+      transition: width 0.3s ease;
+    }
+
+    .btn-reset {
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      color: #475569;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 13.5px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .btn-reset:hover {
+      background: #e2e8f0;
+      color: #0f172a;
+    }
+
+    .step-card {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 26px;
+      margin-bottom: 18px;
+      box-shadow: var(--shadow);
+      transition: all 0.2s ease;
+    }
+
+    .step-card.completed {
+      background: #f0fdf4;
+      border-color: #86efac;
+    }
+
+    .step-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .step-checkbox {
+      width: 28px;
+      height: 28px;
+      border-radius: 9px;
+      border: 2.5px solid #94a3b8;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+      font-size: 17px;
+      font-weight: 900;
+      color: #ffffff;
+      transition: all 0.18s ease;
+    }
+
+    .step-card.completed .step-checkbox {
+      background: var(--green);
+      border-color: var(--green);
+    }
+
+    .step-title-wrap {
+      flex: 1;
+    }
+
+    .step-tag {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--primary);
+      background: var(--primary-light);
+      padding: 3px 10px;
+      border-radius: 999px;
+      margin-bottom: 5px;
+    }
+
+    .step-card.completed .step-tag {
+      background: #bbf7d0;
+      color: #166534;
+    }
+
+    .step-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .step-card.completed .step-title {
+      text-decoration: line-through;
+      color: #166534;
+      opacity: 0.85;
+    }
+
+    .step-body {
+      margin-top: 14px;
+      padding-left: 42px;
+      color: var(--text-sub);
+      font-size: 16px;
+    }
+
+    .sub-checks {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .sub-check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 11px 14px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .sub-check-item:hover {
+      border-color: #93c5fd;
+    }
+
+    .sub-check-item input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      margin-top: 3px;
+      accent-color: var(--green);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .sub-check-item.checked {
+      background: #ecfdf5;
+      border-color: #a7f3d0;
+      color: #166534;
+    }
+
+    .sub-check-item.checked span {
+      text-decoration: line-through;
+      opacity: 0.85;
+    }
+
+    /* Reference Footer */
+    .ref-card {
+      background: #ffffff;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 26px;
+      margin-top: 34px;
+      box-shadow: var(--shadow);
+    }
+
+    .ref-card h3 {
+      font-size: 19px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .ref-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .ref-list li {
+      font-size: 15px;
+      color: var(--text-sub);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .ref-list a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 700;
+      word-break: break-all;
+    }
+
+    .ref-list a:hover {
+      text-decoration: underline;
+    }
+
+    .celebrate {
+      display: none;
+      margin-top: 14px;
+      padding: 14px 18px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+      color: #14532d;
+      font-weight: 800;
+      text-align: center;
+      font-size: 17px;
+    }
+
+    .celebrate.show {
+      display: block;
+    }
+
+    @media (max-width: 640px) {
+      .hero { padding: 28px 22px; }
+      .card, .danger-card, .step-card { padding: 20px 18px; }
+      .step-body { padding-left: 0; }
+    }
+
+    /* PART 3: 40 Curated Topics (Jev Scored) */
+    .p3-guide {
+      background: #ffffff;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 18px;
+      box-shadow: var(--shadow);
+      font-size: 15.5px;
+      color: var(--text-sub);
+    }
+    .p3-guide strong { color: var(--text); }
+    .p3-sum-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+    .p3-sum-card {
+      background: #ffffff;
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: var(--shadow);
+      cursor: pointer;
+      transition: transform 0.16s ease, box-shadow 0.16s ease;
+    }
+    .p3-sum-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+    }
+    .p3-sum-badge {
+      display: inline-block;
+      font-size: 12.5px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 8px;
+    }
+    .p3-sum-top {
+      font-weight: 800;
+      font-size: 14.5px;
+      color: var(--text);
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+    .p3-sum-score {
+      font-size: 13.5px;
+      color: var(--text-sub);
+    }
+    .p3-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 20px;
+      background: #ffffff;
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      padding: 12px 14px;
+      box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+    }
+    .p3-tab {
+      border: 1.5px solid var(--border);
+      background: #f8fafc;
+      color: var(--text-sub);
+      padding: 7px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .p3-tab:hover { border-color: var(--primary); color: var(--primary); }
+    .p3-tab.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+    .p3-search {
+      margin-left: auto;
+      padding: 8px 14px;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 999px;
+      font-size: 14px;
+      min-width: 220px;
+      outline: none;
+    }
+    .p3-search:focus { border-color: var(--primary); }
+    .p3-cat-block { margin-bottom: 30px; }
+    .p3-cat-head {
+      border-radius: 16px;
+      padding: 18px 22px;
+      margin-bottom: 14px;
+      border: 1.5px solid var(--border);
+    }
+    .p3-cat-head h3 {
+      font-size: 20px;
+      font-weight: 900;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+    .p3-cat-head p {
+      font-size: 15px;
+      color: var(--text-sub);
+      margin: 0;
+    }
+    .p3-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .p3-item {
+      background: #ffffff;
+      border: 1.5px solid var(--border);
+      border-radius: 18px;
+      padding: 18px 20px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+    }
+    .p3-item.top3 {
+      border-color: #cbd5e1;
+      box-shadow: 0 8px 22px rgba(15, 23, 42, 0.07);
+    }
+    .p3-item-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .p3-rank {
+      font-size: 13.5px;
+      font-weight: 900;
+      padding: 6px 12px;
+      border-radius: 10px;
+      white-space: nowrap;
+    }
+    .p3-title-wrap { flex: 1; }
+    .p3-title {
+      font-size: 17.5px;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 3px;
+      line-height: 1.35;
+    }
+    .p3-meta {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+    .p3-score-box {
+      text-align: right;
+      min-width: 86px;
+    }
+    .p3-score-val {
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 1.1;
+    }
+    .p3-score-val span {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+    .p3-score-lbl {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+    .p3-bars {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      background: #f8fafc;
+      border: 1px solid #eef2f7;
+      border-radius: 12px;
+      padding: 10px 12px;
+      margin-bottom: 12px;
+    }
+    .p3-bar {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12.5px;
+    }
+    .p3-bar span { color: var(--text-sub); white-space: nowrap; font-weight: 700; }
+    .p3-bar-bg {
+      flex: 1;
+      height: 8px;
+      background: #e2e8f0;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .p3-bar-fill { height: 100%; border-radius: 999px; }
+    .p3-bar b { min-width: 28px; text-align: right; color: var(--text); }
+    .p3-explain {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .p3-ex-box {
+      background: #f8fafc;
+      border-radius: 12px;
+      padding: 12px 14px;
+      border: 1px solid #eef2f7;
+    }
+    .p3-ex-lbl {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    .p3-ex-box p {
+      font-size: 14.5px;
+      color: var(--text-sub);
+      margin: 0;
+      line-height: 1.55;
+    }
+    .p3-foot {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .p3-link {
+      display: inline-block;
+      font-size: 13.5px;
+      font-weight: 800;
+      color: var(--primary);
+      background: var(--primary-light);
+      padding: 6px 13px;
+      border-radius: 10px;
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .p3-link:hover { background: #bfdbfe; }
+    @media (max-width: 720px) {
+      .p3-bars { grid-template-columns: repeat(2, 1fr); }
+      .p3-explain { grid-template-columns: 1fr; }
+      .p3-search { margin-left: 0; width: 100%; }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Hero -->
+    <header class="hero">
+      <div class="hero-badges">
+        <span class="badge badge-glass">📘 초등학생 눈높이 완전정복판</span>
+        <span class="badge badge-status">💻 현재 내 맥 롱폼: 0개 (지금이 첫 1발 골든타임!)</span>
+      </div>
+      <h1>유튜브 롱폼 초고속 수익창출 가이드</h1>
+      <p class="hero-sub">
+        어려운 말 쏙 빼고, <strong>꼭 알아야 할 핵심 지식 5가지</strong>와
+        <strong>지금 당장 순서대로 눌러보는 5단계 체크리스트</strong>만 한 장에 모았습니다.
+      </p>
+    </header>
+
+    <!-- Metaphor -->
+    <section class="metaphor-card">
+      <div class="metaphor-title">🐟 한 줄 핵심 비유 — 「붕어빵 틀 게임」</div>
+      <p>
+        유튜브 수익창출은 <strong>처음부터 예술 작품처럼 3일 동안 붕어빵 1개를 예쁘게 깎는 게임이 아닙니다!</strong>
+      </p>
+      <p>
+        <strong>이미 동네에서 제일 잘 팔리는 1등 붕어빵 틀을 똑같이 구해서 → 딱 1개만 먼저 구워 손님 반응을 보고 → 손님이 몰리면(초록불!) 그때부터 공장처럼 쭉쭉 찍어내는 게임</strong>입니다.
+      </p>
+      <div class="status-strip">
+        <span>📌 <strong>현재 상태:</strong> 내 맥에 완성된 롱폼은 아직 <strong>0개</strong>!</span>
+        <span>🎯 <strong>오늘의 목표:</strong> 고민 멈추고, 1등 틀 골라서 <strong>첫 1발 간보기</strong> 시작하기</span>
+      </div>
+    </section>
+
+    <!-- Quick Navigation -->
+    <nav class="quick-nav" aria-label="빠른 이동">
+      <a href="#part1">① 핵심 지식 5가지</a>
+      <a href="#cheatkeys">4가지 치트키 장르</a>
+      <a href="#gameover">💀 게임 오버 실수 5가지</a>
+      <a href="#part2">② 5단계 행동 체크리스트</a>
+      <a href="#traffic">🚦 48시간 신호등 표</a>
+      <a href="#part3">③ 분야별 추천 소재 40선 (Jev 점수표)</a>
+      <a href="#refs">📚 정본 파일</a>
+    </nav>
+
+    <!-- PART 1 -->
+    <div class="section-header" id="part1">
+      <div class="section-num">1</div>
+      <h2>꼭 알아야 할 핵심 지식 5가지</h2>
+    </div>
+
+    <!-- Knowledge 1 -->
+    <article class="card">
+      <div class="card-head">
+        <span class="card-pill">지식 1</span>
+        <h3>숙제는 딱 2개! 롱폼과 쇼츠가 역할을 나눠서 깬다</h3>
+      </div>
+      <p>유튜브에서 광고 돈을 받으려면(수익창출) 딱 2가지 숙제를 통과하면 됩니다.</p>
+
+      <div class="grid-2">
+        <div class="mini-box blue">
+          <div class="mini-box-title">⏱️ 숙제 A: 시청시간 4,000시간</div>
+          <p><strong>👉 롱폼(긴 영상) 담당!</strong><br />쇼츠로 1,000만 뷰 채우는 것보다 롱폼 1~3편으로 4,000시간 채우는 게 훨씬 빠릅니다.</p>
+        </div>
+        <div class="mini-box green">
+          <div class="mini-box-title">🙋 숙제 B: 구독자 1,000명</div>
+          <p><strong>👉 쇼츠(짧은 영상) 담당!</strong><br />사람을 빠르게 모으는 건 쇼츠가 최고! 둘이 팀플레이로 나눠 깨면 속도가 2배 빨라집니다.</p>
+        </div>
+      </div>
+
+      <div class="big-math">
+        <div class="math-chip">
+          <div class="label">🧮 10분짜리 롱폼 계산기 (평균 4분 시청)</div>
+          <div class="value">약 6만 뷰 = 4,000시간 완료!</div>
+          <div class="desc">유지율 40% 기준 · 처음엔 억지 20분 말고 8~10분 압축 추천</div>
+        </div>
+        <div class="math-chip">
+          <div class="label">🧮 20분짜리 롱폼 계산기 (평균 6분 시청)</div>
+          <div class="value">약 4만 뷰 = 4,000시간 완료!</div>
+          <div class="desc">유지율 30~35% 기준 · 대박 1~2편이면 한 방에 끝!</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Knowledge 2 -->
+    <article class="card" id="cheatkeys">
+      <div class="card-head">
+        <span class="card-pill">지식 2</span>
+        <h3>4,000시간을 제일 빨리 채우는 4가지 치트키 장르</h3>
+      </div>
+      <p>아무 주제나 만들지 말고, 시청시간이 제일 잘 쌓이는 검증된 4가지 길 중 하나를 고릅니다.</p>
+
+      <div class="grid-4">
+        <div class="mini-box amber">
+          <div class="mini-box-title">🎬 ① 2010년 이전 옛날 외국 영화</div>
+          <p>IMDb 7.0+ 안전한 영화사(파라마운트·유니버설·라이온스게이트·20세기 등) 구작을 <strong>180~200% 크게 확대</strong>해 빠르게 4,000시간 달성!</p>
+        </div>
+        <div class="mini-box blue">
+          <div class="mini-box-title">🚔 ② 미국 경찰 바디캠</div>
+          <p>경찰 공식 영상 + <strong>현장 소리 그대로(85~100%)</strong>! 올리고 3~5일 조용히 숨어있다가 갑자기 대폭발하는 효자 장르.</p>
+        </div>
+        <div class="mini-box purple">
+          <div class="mini-box-title">📺 ③ 어르신(6070) 거실 TV</div>
+          <p>시니어·정치·역사·부동산·경제! 어르신들은 거실 TV 리모컨을 잘 안 눌러서 <strong>자동 연속재생</strong>으로 20분 6편만에 2,000시간!</p>
+        </div>
+        <div class="mini-box green">
+          <div class="mini-box-title">📦 ④ 쇼츠 10개 합치기</div>
+          <p>평일엔 짧은 쇼츠로 올리고, 주말에 <strong>쇼츠 10개를 하나로 묶은 합본·몰아보기 롱폼</strong>으로 시청시간을 한 번에 수확!</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Knowledge 3 -->
+    <article class="card">
+      <div class="card-head">
+        <span class="card-pill">지식 3</span>
+        <h3>잘 팔리는 주제 고르는 눈 (큰 연못 + 4가지 조건 + 보물 2개)</h3>
+      </div>
+      <p>물고기가 10마리밖에 없는 작은 웅덩이(10만 시장) 말고, <strong>물고기가 넘치는 큰 연못(상방 1,000만+ 시장)</strong>에서 1/10(100만)만 잡아도 대성공입니다.</p>
+
+      <ul class="nice-list">
+        <li><strong>✅ 4가지 합격 조건:</strong> ① 최근 <strong>1~3개월</strong> 안에 올라온 영상 · ② 영상이 적은 신생 채널(<strong>총 1~35개 이하</strong>) · ③ 조회수 <strong>10만+</strong>(시간당 400회+, 구독자 대비 5배+) · ④ 7일 순위 <strong>1~10등만</strong> 참고(11등 이하는 과감히 버리기!)</li>
+        <li><strong>🏠 보물 ① 한국 빈집 ✔ (리믹스파인더):</strong> 해외에서는 대박 났는데, 한국 유튜브에 검색해 보면 <strong>아직 아무도 안 올린 주제(검색 0개)</strong> — 먼저 올리는 사람이 1등 독점!</li>
+        <li><strong>😴 보물 ② 누운 소재:</strong> 예전에 누적 <strong>100만 뷰 이상</strong> 크게 터졌는데, 지금은 시간당 100회 이하로 잠들어 있는 주제 — 다시 깨워서 올리면 또 터진다!</li>
+      </ul>
+    </article>
+
+    <!-- Knowledge 4 -->
+    <article class="card">
+      <div class="card-head">
+        <span class="card-pill">지식 4</span>
+        <h3>사람들이 끝까지 보게 만드는 4가지 마법</h3>
+      </div>
+
+      <div class="grid-2">
+        <div class="mini-box blue">
+          <div class="mini-box-title">⚡ 마법 1. 0.00초 즉시 시작</div>
+          <p>"안녕하세요~", 로고 인트로, 초반 멍때리는 무음, "1991년에..." 금지! <strong>시작하자마자 가장 충격적인 4초 하이라이트</strong>로 바로 돌진!</p>
+        </div>
+        <div class="mini-box amber">
+          <div class="mini-box-title">🎣 마법 2. 4~5분 지점 떡밥</div>
+          <p>시청자가 지루해서 나가려는 4~5분쯤에 <strong>"잠시 뒤에 진짜 반전이 나옵니다!"</strong> 예고 투척 (긴 영상은 7·13·18분마다!).</p>
+        </div>
+        <div class="mini-box purple">
+          <div class="mini-box-title">🚫 마법 3. 구좋알 금지 + 종료 20초 재생목록</div>
+          <p>끝날 때 "구독·좋아요 눌러주세요~" 하는 순간 리모컨으로 나가버림! <strong>팩트 한 줄로 딱 끝내고</strong>, 마지막 20초에 <strong>'몰아보기 재생목록'</strong> 띄우기!</p>
+        </div>
+        <div class="mini-box green">
+          <div class="mini-box-title">🖼️ 마법 4. 표지(썸네일) 80% 공식</div>
+          <p>클릭률(CTR) <strong>7%+</strong>가 합격선! 안 눌리면 아무도 못 본다. 아래 황금 규칙으로 3초 만에 눈에 띄게 만들기!</p>
+        </div>
+      </div>
+
+      <div class="thumb-demo">
+        <div class="thumb-sample">
+          <div class="thumb-line1">첫째 줄은 순백색</div>
+          <div class="thumb-line2">둘째 줄은 강렬한 빨강!</div>
+        </div>
+        <div class="thumb-tips">
+          <strong>🎨 베네치아식 썸네일 공식:</strong><br />
+          • <strong>사람(피사체) 1명 + 글자 5어절 이내(2줄 굵은 고딕)</strong><br />
+          • 1줄 순백색(<code>#FFFFFF</code>) + 2줄 강렬한 빨강(<code>#FF1E1E</code>)<br />
+          • 배경은 살짝 흐리고 어둡게(<code>-15%</code>), 사람 테두리는 빛(림 라이트)으로 톡 튀어나오게!
+        </div>
+      </div>
+    </article>
+
+    <!-- Knowledge 5 (DANGER) -->
+    <article class="danger-card" id="gameover">
+      <div class="card-head">
+        <span class="card-pill">💀 게임 오버 경고</span>
+        <h3>절대 하면 안 되는 '게임 오버' 실수 5가지</h3>
+      </div>
+      <p style="color:#7f1d1d; font-weight:600;">아래 5가지는 한 번만 어겨도 채널이 날아가거나 돈 받는 자격이 취소되는 치명적 실수입니다.</p>
+
+      <div class="danger-list">
+        <div class="danger-item">
+          <div class="danger-item-title">1. 계정 섞어 쓰기 &amp; 기기값 안 끊기 (연쇄 폭발!)</div>
+          <p>여러 채널을 같은 폰 번호·같은 크롬에 묶어두면, 1개 채널에 문제가 생길 때 나머지 채널까지 한꺼번에 정지됩니다. VPN 사용·수창 채널 구매도 절대 금지!</p>
+          <span class="safe-tip">✅ 정답: 1계정 = 1채널 = 1크롬 프로필 = 1폴더 + Ente Auth OTP 등록 후 폰에서 번호·계정 삭제!</span>
+        </div>
+
+        <div class="danger-item">
+          <div class="danger-item-title">2. 무서운 방송사·영화사 영상 건드리기</div>
+          <p><strong>디즈니 · 소니 · KBS/MBC/SBS · JTBC/ENA/TV조선 · tvN · CJ · 쿠팡플레이 · KT스튜디오지니 · 일본 드라마/애니 · 텐센트 · 넷플릭스 한국 신작 롱폼</strong>은 경고(스트라이크) 한 방에 채널이 즉사합니다.</p>
+          <span class="safe-tip">✅ 정답: 허용된 안전한 소스만 쓰고, 경고 올 것 같은 영상은 비공개 말고 즉시 완전 삭제!</span>
+        </div>
+
+        <div class="danger-item">
+          <div class="danger-item-title">3. 영화 롱폼을 수익창출 된 뒤에 삭제하기</div>
+          <p>4,000시간을 채워준 영화 롱폼을 나중에 지워버리면, 누적 시청시간이 4,000시간 아래로 뚝 떨어져서 <strong>수익창출이 바로 해제</strong>됩니다.</p>
+          <span class="safe-tip">✅ 정답: 영화 롱폼은 돈 벌기 시작한 뒤에도 절대 지우지 말고 그대로 두기!</span>
+        </div>
+
+        <div class="danger-item">
+          <div class="danger-item-title">4. '재사용 콘텐츠' 탈락했을 때 기존 영상 지우기</div>
+          <p>당황해서 기존 영상을 지우거나 항소 중에 새 영상을 올리면 검토팀 기록이 어긋나 <strong>즉시 자동 탈락</strong>합니다.</p>
+          <span class="safe-tip">✅ 정답: 기존 영상 1개도 건드리지 말고, 애드센스 입금 확인 후 5분 미만 항소 영상(첫 30초 채널 URL + 제작 과정 + 영어 자막) 제출! 통과 후에도 항소 영상 삭제 금지!</span>
+        </div>
+
+        <div class="danger-item">
+          <div class="danger-item-title">5. 조회수 확인도 전에 며칠씩 예쁘게 깎기</div>
+          <p>손님이 좋아할지 안 좋아할지도 모르는데 3일씩 정성 들여 1편 만들면, 안 터졌을 때 시간만 통째로 날아갑니다.</p>
+          <span class="safe-tip">✅ 정답: 1등 틀 100% 칼카피 → 1발 간보기 → 48시간 신호등 초록불 확인 뒤에 예쁘게 다듬기!</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- PART 2 -->
+    <div class="section-header" id="part2">
+      <div class="section-num">2</div>
+      <h2>지금 당장 순서대로 하는 5단계 체크리스트</h2>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-box">
+      <div class="progress-top">
+        <div>
+          <span class="progress-label">🏆 나의 수익창출 준비 진행률: </span>
+          <span class="progress-pct" id="progressPct">0%</span>
+          <span style="color:var(--text-muted); font-size:14.5px; margin-left:6px;" id="progressCount">(0 / 15 완료)</span>
+        </div>
+        <button type="button" class="btn-reset" id="resetBtn">🔄 체크 초기화</button>
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" id="progressFill"></div>
+      </div>
+      <div class="celebrate" id="celebrateBox">🎉 대단해요! 5단계 체크리스트를 100% 완료했습니다! 이제 초록불 터진 주제로 공장 풀가동하세요! 🚀</div>
+    </div>
+
+    <!-- Step 1 -->
+    <section class="step-card" data-step="1">
+      <div class="step-header" onclick="toggleStep(1)">
+        <div class="step-checkbox" id="stepBox1">✓</div>
+        <div class="step-title-wrap">
+          <span class="step-tag">STEP 1 · 안전 준비</span>
+          <div class="step-title">안전한 방 만들기 (계정 격리 &amp; 고급인증)</div>
+        </div>
+      </div>
+      <div class="step-body">
+        <p>채널이 서로 엉키지 않게 깔끔하게 방을 나눠 준비합니다.</p>
+        <div class="sub-checks">
+          <label class="sub-check-item"><input type="checkbox" data-id="s1_1" /><span><strong>1구글계정 = 1본채널 = 1독립 크롬 프로필 = 1독립 폴더</strong>로 깔끔하게 분리하기</span></label>
+          <label class="sub-check-item"><input type="checkbox" data-id="s1_2" /><span><strong>Ente Auth OTP</strong> 등록(복구키 보관) → 전화번호 삭제 → 폰에서 계정 삭제(기기값 절단)</span></label>
+          <label class="sub-check-item"><input type="checkbox" data-id="s1_3" /><span>15분 이상 긴 영상과 맞춤 표지(썸네일)를 올릴 수 있게 <strong>2~3차 고급인증</strong> 미리 끝내기</span></label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 2 -->
+    <section class="step-card" data-step="2">
+      <div class="step-header" onclick="toggleStep(2)">
+        <div class="step-checkbox" id="stepBox2">✓</div>
+        <div class="step-title-wrap">
+          <span class="step-tag">STEP 2 · 보물 찾기</span>
+          <div class="step-title">큰 연못에서 보물 주제 3개 고르기</div>
+        </div>
+      </div>
+      <div class="step-body">
+        <p>내가 하고 싶은 취향은 잠시 접어두고, <strong>제일 빨리 4,000시간이 쌓이는 주제</strong>만 3개 고릅니다.</p>
+        <div class="sub-checks">
+          <label class="sub-check-item"><input type="checkbox" data-id="s2_1" /><span>4가지 치트키 장르(<strong>구작 외국영화 / 미국 경찰 바디캠 / 어르신 거실 TV / 쇼츠 합본</strong>) 중 1개 선택</span></label>
+          <label class="sub-check-item"><input type="checkbox" data-id="s2_2" /><span>4가지 조건(<strong>1~3개월 · 영상 35개↓ · 10만+ · 7일 순위 1~10등</strong>) + 한국 빈집/누운 소재 스캔</span></label>
+          <label class="sub-check-item"><input type="checkbox" data-id="s2_3" /><span>무서운 방송사/영화사(디즈니·소니·국내 지상파/종편·넷플 한국신작 등)가 아닌 안전한 소재 3개 확정</span></label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 3 -->
+    <section class="step-card" data-step="3">
+      <div class="step-header" onclick="toggleStep(3)">
+        <div class="step-checkbox" id="stepBox3">✓</div>
+        <div class="step-title-wrap">
+          <span class="step-tag">STEP 3 · 첫 붕어빵 굽기</span>
+          <div class="step-title">1등 붕어빵 틀 100% 따라 만들고 4가지 마법 넣기</div>
+        </div>
+      </div>
+      <div class="step-body">
+        <p>1등 채널 영상 3~5개의 구도·속도·자막·음악 틀을 똑같이 맞추고, 끝까지 보게 만드는 4가지 마법을 넣습니다.</p>
+        <div class="sub-checks">
+          <label class="sub-check-item"><input type="checkbox" data-id="s3_1" /><span><strong>0.00초 즉시 시작</strong>(인트로·무음·날짜 낭독 0%) + <strong>4~5분 지점 반전 떡밥</strong> 넣기</span></label>
+          <label class="sub-check-item"><input type="checkbox" data-id="s3_2" /><span>엔딩 <strong>'구독·좋아요' 멘트 0%</strong> → 팩트 한 줄 컷 종료 + <strong>마지막 20초 '몰아보기 재생목록'</strong> 연결</span></label>
+          <label class="sub-check-item"><input type="checkbox" data-id="s3_3" /><span>표지(썸네일): <strong>사람 1명 + 5어절 2줄(1줄 흰색 `#FFFFFF` / 2줄 빨강 `#FF1E1E`)</strong> + 배경 어둡게</span></label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 4 -->
+    <section class="step-card" data-step="4" id="traffic">
+      <div class="step-header" onclick="toggleStep(4)">
+        <div class="step-checkbox" id="stepBox4">✓</div>
+        <div class="step-title-wrap">
+          <span class="step-tag">STEP 4 · 간보기 &amp; 신호등</span>
+          <div class="step-title">1발만 먼저 쏘고 48시간 신호등 확인하기</div>
+        </div>
+      </div>
+      <div class="step-body">
+        <p>비공개로 올린 뒤 1시간 숙성 후 공개(목요일 밤 · 금요일 저녁 ~ 주말 집중!)하고, <strong>48시간 조회수 신호등</strong>으로 다음 행동을 결정합니다.</p>
+
+        <div class="traffic-wrap">
+          <table class="traffic-table">
+            <thead>
+              <tr>
+                <th>48시간 조회수</th>
+                <th>신호등</th>
+                <th>바로 해야 할 행동</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>0 ~ 100 미만</strong></td>
+                <td><span class="light-badge light-red">🔴 빨간불 (냉각)</span></td>
+                <td>2편 연속 0뷰면 미련 버리고 비공개 후 다른 주제로 전환! (계정은 버리지 말고 3번+ 재활용)</td>
+              </tr>
+              <tr>
+                <td><strong>100 ~ 500대</strong></td>
+                <td><span class="light-badge light-yellow">🟡 노란불 (가열 시작)</span></td>
+                <td>채널 엔진 예열 중! <strong>여기서 같은 결로 1~2방 더 쏘기</strong>가 제일 중요</td>
+              </tr>
+              <tr>
+                <td><strong>800 ~ 1,000대</strong></td>
+                <td><span class="light-badge light-orange">🟠 주황불 (신호탄)</span></td>
+                <td>방향·주제 적중! 재료 더 보강해서 다음 편 바로 장전</td>
+              </tr>
+              <tr>
+                <td><strong>2,000 ~ 4,000대+</strong></td>
+                <td><span class="light-badge light-green">🟢 초록불 (폭격 신호!)</span></td>
+                <td><strong>딴길 절대 금지!</strong> 바로 STEP 5 융단폭격(원형+둔갑) 시작!</td>
+              </tr>
+              <tr>
+                <td><strong>10,000+ (시간당 1천+)</strong></td>
+                <td><span class="light-badge light-fire">🔥 불꽃 (홈/TV 대폭발)</span></td>
+                <td>채널 주제 영구 고정! 20~50편 끝까지 뽑아먹고 해외(일·영·스) 확장!</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sub-checks">
+          <label class="sub-check-item"><input type="checkbox" data-id="s4_1" /><span>비공개 업로드 → 1시간 뒤 공개 예약 (동시 몰아 올리기 금지, 15분 간격·한국 6시간 간격 준수)</span></label>
+          <label class="sub-check-item"><input type="checkbox" data-id="s4_2" /><span>클릭률(CTR) 확인 — 1~2%로 낮으면 표지(썸네일)·제목 즉시 교체(테스트 및 비교 활용)</span></label>
+          <label class="sub-check-item"><input type="checkbox" data-id="s4_3" /><span>48시간 신호등 판독 완료 (노란불 추가 1~2방 / 초록불 즉시 STEP 5 돌입!)</span></label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 5 -->
+    <section class="step-card" data-step="5">
+      <div class="step-header" onclick="toggleStep(5)">
+        <div class="step-checkbox" id="stepBox5">✓</div>
+        <div class="step-title-wrap">
+          <span class="step-tag">STEP 5 · 공장 풀가동</span>
+          <div class="step-title">초록불 켜지면 딴길 절대 금지 → 원형+둔갑 융단폭격!</div>
+        </div>
+      </div>
+      <div class="step-body">
+        <p>입질 온 1개 주제를 놓치지 말고 끝까지 단물을 빼서 4,000시간을 한 번에 돌파합니다.</p>
+        <div class="sub-checks">
+          <label class="sub-check-item"><input type="checkbox" data-id="s5_1" /><span>터진 주제 1개로 <strong>원형 1~3호 + 70% 바꾼 둔갑본(초반 30초·순서·표지·색감 변형) V1~V20</strong> 연속 발사</span></label>
+          <label class="sub-check-item"><input type="checkbox" data-id="s5_2" /><span>쇼츠로 구독자 1,000명 채우기 + 주말에 쇼츠 10개 묶은 합본 롱폼으로 4,000시간 가속</span></label>
+          <label class="sub-check-item"><input type="checkbox" data-id="s5_3" /><span>잘 뽑히는 세팅 폴더는 <strong>`채널명_기준판`으로 동결</strong>해 보호 (수정은 `_실험` 복사본에서만!)</span></label>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PART 3: 40 Curated Topics -->
+    <div class="section-header" id="part3">
+      <div class="section-num">3</div>
+      <h2>분야별 바로 만드는 추천 소재 40선 (Jev 실측 점수표)</h2>
+    </div>
+
+    <div class="p3-guide">
+      <strong>📏 점수 읽는 법 (TypeSafe Jev 실측 · 100점 만점):</strong>
+      ① <strong>후킹(30점)</strong> = 처음 3초에 안 끄고 계속 볼 만큼 궁금한가? ·
+      ② <strong>물증(30점)</strong> = 말할 때 바로 보여줄 진짜 영상·사진·기록이 많은가? ·
+      ③ <strong>스토리(20점)</strong> = 처음-중간-반전 결말이 재밌게 이어지는가? ·
+      ④ <strong>적합(20점)</strong> = 그 채널 시청자가 딱 좋아하는 주제인가?
+      <br />👉 40개 모두 실제 확인된 링크와 조회수·평점만 담았고, <strong>각 분야 1위(Jev 최고점)가 맨 위</strong>에 올라와 있어요!
+    </div>
+
+    <div class="p3-sum-grid">
+      
+      <div class="p3-sum-card" onclick="p3Filter('p3-cat-1')" style="border-top: 4px solid #4f46e5;">
+        <div class="p3-sum-badge" style="background:#eef2ff;color:#4f46e5;">🎬 분야 1 · 옛날 외국 영화</div>
+        <div class="p3-sum-top">👑 1위: 트루먼 쇼 (The Truman Show, 1998) — 파라마운트 · IMDb 8.2</div>
+        <div class="p3-sum-score">1위 <strong>87.3점</strong> · 분야 평균 77.9점</div>
+      </div>
+      <div class="p3-sum-card" onclick="p3Filter('p3-cat-2')" style="border-top: 4px solid #2563eb;">
+        <div class="p3-sum-badge" style="background:#eff6ff;color:#2563eb;">🚔 분야 2 · 미국 경찰 바디캠</div>
+        <div class="p3-sum-top">👑 1위: 수화(손짓 언어)를 공격으로 오해해 청각장애인을 때린 경찰 논란 사건 (100만 뷰)</div>
+        <div class="p3-sum-score">1위 <strong>90.1점</strong> · 분야 평균 87.8점</div>
+      </div>
+      <div class="p3-sum-card" onclick="p3Filter('p3-cat-3')" style="border-top: 4px solid #16a34a;">
+        <div class="p3-sum-badge" style="background:#f0fdf4;color:#16a34a;">📺 분야 3 · 어르신 거실 TV</div>
+        <div class="p3-sum-top">👑 1위: 62~69년생 기초연금 한 푼도 못 받을 수 있다? 바뀌는 새 기준 총정리 (88만 뷰)</div>
+        <div class="p3-sum-score">1위 <strong>68.2점</strong> · 분야 평균 62.9점</div>
+      </div>
+      <div class="p3-sum-card" onclick="p3Filter('p3-cat-4')" style="border-top: 4px solid #d97706;">
+        <div class="p3-sum-badge" style="background:#fffbeb;color:#d97706;">🌍 분야 4 · 해외 대박 빈집</div>
+        <div class="p3-sum-top">👑 1위: 역사상 가장 거대한 ‘가짜 명화’ 미술 사기극 (160만 뷰)</div>
+        <div class="p3-sum-score">1위 <strong>83.0점</strong> · 분야 평균 77.8점</div>
+      </div>
+    </div>
+
+    <div class="p3-controls">
+      <button type="button" class="p3-tab active" onclick="p3Filter('all', this)">전체 40개 보기</button>
+      <button type="button" class="p3-tab" onclick="p3Filter('p3-cat-1', this)">🎬 분야 1 · 옛날 영화</button>
+      <button type="button" class="p3-tab" onclick="p3Filter('p3-cat-2', this)">🚔 분야 2 · 미국 경찰 바디캠</button>
+      <button type="button" class="p3-tab" onclick="p3Filter('p3-cat-3', this)">📺 분야 3 · 어르신 거실 TV</button>
+      <button type="button" class="p3-tab" onclick="p3Filter('p3-cat-4', this)">🌍 분야 4 · 해외 대박 빈집</button>
+      <input type="text" class="p3-search" id="p3Search" placeholder="키워드 검색 (예: 치매, 비행기, 파라마운트)" oninput="p3ApplySearch()" />
+    </div>
+
+    
+    <div class="p3-cat-block" id="p3-cat-1" data-p3-cat="p3-cat-1">
+      <div class="p3-cat-head" style="background:#eef2ff;border-color:#c7d2fe;border-left:6px solid #4f46e5;">
+        <h3>분야 1: 2010년 이전 옛날 외국 영화 (10개 · Jev 점수 높은 순)</h3>
+        <p>2010년보다 전에 나온 파라마운트·유니버설·라이온스게이트 같은 ‘안전한 회사’ 영화들이에요. 디즈니·소니·일본·한국 방송사는 뺐어요! 이야기가 이미 너무 재밌어서 4,000시간 시청시간을 가장 빨리 채우는 치트키예요.</p>
+      </div>
+      <div class="p3-list">
+        
+        <div class="p3-item top3" data-p3-cat="p3-cat-1" data-p3-text="트루먼 쇼 (the truman show, 1998) — 파라마운트 · imdb 8.2 ‘내 가족과 친구가 다 연기자라면?’ 하는 상상만으로도 초등학생부터 어른까지 끝까지 보게 됩니다. 파라마운트는 저작권 안전 배급사라 롱폼으로 4,000시간을 안전하게 채우기 딱 좋습니다. 하늘에서 조명이 떨어지는 장면, 바닷가 벽에 부딪히는 장면 등 대본 한 줄마다 바로 보여줄 확실한 영화 장면이 아주 많습니다. 1998년 · 파라마운트(허용) · imdb 8.2">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#eef2ff;color:#4f46e5;">🥇 1위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">트루먼 쇼 (The Truman Show, 1998) — 파라마운트 · IMDb 8.2</div>
+              <div class="p3-meta">1998년 · 파라마운트(허용) · IMDb 8.2</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#4f46e5;">87.3<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:89%;background:#ef4444;"></div></div><b>26.7</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:82%;background:#2563eb;"></div></div><b>24.6</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:94%;background:#16a34a;"></div></div><b>18.8</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:86%;background:#7c3aed;"></div></div><b>17.2</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>‘내 가족과 친구가 다 연기자라면?’ 하는 상상만으로도 초등학생부터 어른까지 끝까지 보게 됩니다. 파라마운트는 저작권 안전 배급사라 롱폼으로 4,000시간을 안전하게 채우기 딱 좋습니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>하늘에서 조명이 떨어지는 장면, 바닷가 벽에 부딪히는 장면 등 대본 한 줄마다 바로 보여줄 확실한 영화 장면이 아주 많습니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.imdb.com/title/tt0120382/" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.imdb.com/title/tt0120382/)</a>
+          </div>
+        </div>
+        <div class="p3-item top3" data-p3-cat="p3-cat-1" data-p3-text="캐치 미 이프 유 캔 (catch me if you can, 2002) — 드림웍스/파라마운트 · imdb 8.1 ‘고등학생이 진짜 비행기 조종사 행세를 했다’는 실화라 누구나 클릭합니다. 잔인한 장면이 전혀 없어서 노딱(수익 제한) 걱정도 0%입니다. 조종사 제복, 수표 위조 장면, fbi와 호텔에서 마주치는 장면 등 사건 순서대로 1:1 화면을 척척 붙일 수 있습니다. 2002년 · 드림웍스/파라마운트(허용) · imdb 8.1">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#eef2ff;color:#4f46e5;">🥈 2위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">캐치 미 이프 유 캔 (Catch Me If You Can, 2002) — 드림웍스/파라마운트 · IMDb 8.1</div>
+              <div class="p3-meta">2002년 · 드림웍스/파라마운트(허용) · IMDb 8.1</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#4f46e5;">84.9<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:82%;background:#ef4444;"></div></div><b>24.6</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:85%;background:#2563eb;"></div></div><b>25.5</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:87%;background:#16a34a;"></div></div><b>17.4</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:87%;background:#7c3aed;"></div></div><b>17.4</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>‘고등학생이 진짜 비행기 조종사 행세를 했다’는 실화라 누구나 클릭합니다. 잔인한 장면이 전혀 없어서 노딱(수익 제한) 걱정도 0%입니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>조종사 제복, 수표 위조 장면, FBI와 호텔에서 마주치는 장면 등 사건 순서대로 1:1 화면을 척척 붙일 수 있습니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.imdb.com/title/tt0264464/" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.imdb.com/title/tt0264464/)</a>
+          </div>
+        </div>
+        <div class="p3-item top3" data-p3-cat="p3-cat-1" data-p3-text="프라이멀 피어 (primal fear, 1996) — 파라마운트 · imdb 7.7 마지막 3분 반전 하나 때문에 ‘결말이 뭐지?’ 하고 끝까지 절대 안 끕니다. 1996년 파라마운트 구작이라 저작권이 안전하고 시청 시간이 아주 길게 나옵니다. 법정 재판 장면, 비디오 테이프 증거, 감옥에서 표정이 싹 바뀌는 클로즈업 등 1:1로 붙일 명장면이 뚜렷합니다. 1996년 · 파라마운트(허용) · imdb 7.7">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#eef2ff;color:#4f46e5;">🥉 3위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">프라이멀 피어 (Primal Fear, 1996) — 파라마운트 · IMDb 7.7</div>
+              <div class="p3-meta">1996년 · 파라마운트(허용) · IMDb 7.7</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#4f46e5;">83.7<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:90%;background:#ef4444;"></div></div><b>27.0</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:71%;background:#2563eb;"></div></div><b>21.3</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:92%;background:#16a34a;"></div></div><b>18.4</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:85%;background:#7c3aed;"></div></div><b>17.0</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>마지막 3분 반전 하나 때문에 ‘결말이 뭐지?’ 하고 끝까지 절대 안 끕니다. 1996년 파라마운트 구작이라 저작권이 안전하고 시청 시간이 아주 길게 나옵니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>법정 재판 장면, 비디오 테이프 증거, 감옥에서 표정이 싹 바뀌는 클로즈업 등 1:1로 붙일 명장면이 뚜렷합니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.imdb.com/title/tt0117381/" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.imdb.com/title/tt0117381/)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-1" data-p3-text="이터널 선샤인 (eternal sunshine of the spotless mind, 2004) — 포커스/유니버설 · imdb 8.3 ‘실연의 기억을 돈 주고 지운다’는 아이디어가 매력적이고, 2030 여성·남성 시청자 댓글과 재시청률이 폭발하는 검증된 명작입니다. 얼어붙은 강 위에 누운 장면, 기억 속 집이 모래처럼 무너지는 장면 등 시각적으로 예쁜 장면이 가득합니다. 2004년 · 포커스/유니버설(허용) · imdb 8.3">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#eef2ff;color:#4f46e5;">4위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">이터널 선샤인 (Eternal Sunshine of the Spotless Mind, 2004) — 포커스/유니버설 · IMDb 8.3</div>
+              <div class="p3-meta">2004년 · 포커스/유니버설(허용) · IMDb 8.3</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#4f46e5;">78.4<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:67%;background:#ef4444;"></div></div><b>20.1</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:77%;background:#2563eb;"></div></div><b>23.1</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:88%;background:#16a34a;"></div></div><b>17.6</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:88%;background:#7c3aed;"></div></div><b>17.6</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>‘실연의 기억을 돈 주고 지운다’는 아이디어가 매력적이고, 2030 여성·남성 시청자 댓글과 재시청률이 폭발하는 검증된 명작입니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>얼어붙은 강 위에 누운 장면, 기억 속 집이 모래처럼 무너지는 장면 등 시각적으로 예쁜 장면이 가득합니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.imdb.com/title/tt0338013/" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.imdb.com/title/tt0338013/)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-1" data-p3-text="본 아이덴티티 (the bourne identity, 2002) — 유니버설 · imdb 7.8 ‘내가 누구인지 모르는데 싸움을 너무 잘한다’는 설정이 초반 30초 만에 시청자를 사로잡습니다. 유니버설 2002년 구작이라 저작권이 안전합니다. 스위스 은행 금고 속 여권들, 파리 골목 자동차 추격전, 대사관 탈출 장면 등 액션 물증이 쉴 새 없이 이어집니다. 2002년 · 유니버설(허용) · imdb 7.8">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#eef2ff;color:#4f46e5;">5위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">본 아이덴티티 (The Bourne Identity, 2002) — 유니버설 · IMDb 7.8</div>
+              <div class="p3-meta">2002년 · 유니버설(허용) · IMDb 7.8</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#4f46e5;">78.2<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:67%;background:#ef4444;"></div></div><b>20.1</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:75%;background:#2563eb;"></div></div><b>22.5</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:89%;background:#16a34a;"></div></div><b>17.8</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:89%;background:#7c3aed;"></div></div><b>17.8</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>‘내가 누구인지 모르는데 싸움을 너무 잘한다’는 설정이 초반 30초 만에 시청자를 사로잡습니다. 유니버설 2002년 구작이라 저작권이 안전합니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>스위스 은행 금고 속 여권들, 파리 골목 자동차 추격전, 대사관 탈출 장면 등 액션 물증이 쉴 새 없이 이어집니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.imdb.com/title/tt0258463/" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.imdb.com/title/tt0258463/)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-1" data-p3-text="인사이드 맨 (inside man, 2006) — 유니버설 · imdb 7.6 ‘은행을 털었는데 왜 돈이 그대로지?’라는 첫 질문이 너무 궁금해서 시청자가 결말까지 자리를 못 뜹니다. 유니버설 배급 안전 구작입니다. 가짜 벽 뒤에 숨는 트릭, 비밀 금고 상자, 형사 취조실 장면 등 추리 증거 화면을 1:1로 딱 맞춰 보여줄 수 있습니다. 2006년 · 유니버설(허용) · imdb 7.6">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#eef2ff;color:#4f46e5;">6위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">인사이드 맨 (Inside Man, 2006) — 유니버설 · IMDb 7.6</div>
+              <div class="p3-meta">2006년 · 유니버설(허용) · IMDb 7.6</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#4f46e5;">77.9<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:83%;background:#ef4444;"></div></div><b>24.9</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:68%;background:#2563eb;"></div></div><b>20.4</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:77%;background:#16a34a;"></div></div><b>15.4</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:86%;background:#7c3aed;"></div></div><b>17.2</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>‘은행을 털었는데 왜 돈이 그대로지?’라는 첫 질문이 너무 궁금해서 시청자가 결말까지 자리를 못 뜹니다. 유니버설 배급 안전 구작입니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>가짜 벽 뒤에 숨는 트릭, 비밀 금고 상자, 형사 취조실 장면 등 추리 증거 화면을 1:1로 딱 맞춰 보여줄 수 있습니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.imdb.com/title/tt0454848/" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.imdb.com/title/tt0454848/)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-1" data-p3-text="쏘우 (saw, 2004) — 라이온스게이트 · imdb 7.6 결말 반전만으로도 유튜브 영화 리뷰 조회수 보증수표입니다. 단, 노딱 방지를 위해 잔인한 장면은 빼고 ‘두뇌 추리와 마지막 반전’ 위주로 15세 톤 편집하면 안전합니다. 카세트 테이프, 밀실 단서, 마지막에 문이 닫히는 명장면 등 핵심 장면들이 짧고 강렬합니다. 2004년 · 라이온스게이트(허용) · imdb 7.6">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#eef2ff;color:#4f46e5;">7위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">쏘우 (Saw, 2004) — 라이온스게이트 · IMDb 7.6</div>
+              <div class="p3-meta">2004년 · 라이온스게이트(허용) · IMDb 7.6</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#4f46e5;">75.5<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:87%;background:#ef4444;"></div></div><b>26.1</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:68%;background:#2563eb;"></div></div><b>20.4</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:73%;background:#16a34a;"></div></div><b>14.6</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:72%;background:#7c3aed;"></div></div><b>14.4</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>결말 반전만으로도 유튜브 영화 리뷰 조회수 보증수표입니다. 단, 노딱 방지를 위해 잔인한 장면은 빼고 ‘두뇌 추리와 마지막 반전’ 위주로 15세 톤 편집하면 안전합니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>카세트 테이프, 밀실 단서, 마지막에 문이 닫히는 명장면 등 핵심 장면들이 짧고 강렬합니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.imdb.com/title/tt0387564/" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.imdb.com/title/tt0387564/)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-1" data-p3-text="칠드런 오브 맨 (children of men, 2006) — 유니버설 · imdb 7.9 ‘세상에 아기가 안 태어난다’는 설정이 요즘 한국 저출산 이슈와 딱 맞물려 한국 시청자 클릭률이 아주 높습니다. 유니버설 안전 구작입니다. 끊기지 않고 한 번에 찍은 자동차 습격 장면, 아기 울음소리에 전투가 멈추는 장면 등 압도적 명장면이 확실합니다. 2006년 · 유니버설(허용) · imdb 7.9">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#eef2ff;color:#4f46e5;">8위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">칠드런 오브 맨 (Children of Men, 2006) — 유니버설 · IMDb 7.9</div>
+              <div class="p3-meta">2006년 · 유니버설(허용) · IMDb 7.9</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#4f46e5;">74.0<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:81%;background:#ef4444;"></div></div><b>24.3</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:59%;background:#2563eb;"></div></div><b>17.7</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:78%;background:#16a34a;"></div></div><b>15.6</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:82%;background:#7c3aed;"></div></div><b>16.4</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>‘세상에 아기가 안 태어난다’는 설정이 요즘 한국 저출산 이슈와 딱 맞물려 한국 시청자 클릭률이 아주 높습니다. 유니버설 안전 구작입니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>끊기지 않고 한 번에 찍은 자동차 습격 장면, 아기 울음소리에 전투가 멈추는 장면 등 압도적 명장면이 확실합니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.imdb.com/title/tt0206634/" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.imdb.com/title/tt0206634/)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-1" data-p3-text="글래디에이터 (gladiator, 2000) — 유니버설/드림웍스 · imdb 8.5 ‘억울하게 당한 영웅이 끝내 복수한다’는 이야기는 유튜브에서 무조건 시청 시간이 길게 나옵니다. 유니버설 배급이라 안전합니다. 콜로세움 전투, 투구를 벗고 정체를 밝히는 장면 등 웅장한 볼거리가 많아 화면이 절대 지루하지 않습니다. 2000년 · 유니버설/드림웍스(허용) · imdb 8.5">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#eef2ff;color:#4f46e5;">9위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">글래디에이터 (Gladiator, 2000) — 유니버설/드림웍스 · IMDb 8.5</div>
+              <div class="p3-meta">2000년 · 유니버설/드림웍스(허용) · IMDb 8.5</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#4f46e5;">73.6<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:48%;background:#ef4444;"></div></div><b>14.4</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:78%;background:#2563eb;"></div></div><b>23.4</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:92%;background:#16a34a;"></div></div><b>18.4</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:87%;background:#7c3aed;"></div></div><b>17.4</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>‘억울하게 당한 영웅이 끝내 복수한다’는 이야기는 유튜브에서 무조건 시청 시간이 길게 나옵니다. 유니버설 배급이라 안전합니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>콜로세움 전투, 투구를 벗고 정체를 밝히는 장면 등 웅장한 볼거리가 많아 화면이 절대 지루하지 않습니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.imdb.com/title/tt0172495/" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.imdb.com/title/tt0172495/)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-1" data-p3-text="포레스트 검프 (forrest gump, 1994) — 파라마운트 · imdb 8.8 평점 8.8점의 전설적인 감동 영화라 남녀노소, 특히 어르신들까지 끝까지 울면서 봅니다. 30년 넘은 파라마운트 구작이라 저작권 위험도 매우 낮습니다. 다리 보조기가 풀리며 달리는 장면, 벤치에서 초콜릿 상자를 여는 장면 등 누구나 기억하는 명장면이 가득합니다. 1994년 · 파라마운트(허용) · imdb 8.8">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#eef2ff;color:#4f46e5;">10위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">포레스트 검프 (Forrest Gump, 1994) — 파라마운트 · IMDb 8.8</div>
+              <div class="p3-meta">1994년 · 파라마운트(허용) · IMDb 8.8</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#4f46e5;">65.1<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:20%;background:#ef4444;"></div></div><b>6.0</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:85%;background:#2563eb;"></div></div><b>25.5</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:80%;background:#16a34a;"></div></div><b>16.0</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:88%;background:#7c3aed;"></div></div><b>17.6</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>평점 8.8점의 전설적인 감동 영화라 남녀노소, 특히 어르신들까지 끝까지 울면서 봅니다. 30년 넘은 파라마운트 구작이라 저작권 위험도 매우 낮습니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>다리 보조기가 풀리며 달리는 장면, 벤치에서 초콜릿 상자를 여는 장면 등 누구나 기억하는 명장면이 가득합니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.imdb.com/title/tt0109830/" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.imdb.com/title/tt0109830/)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p3-cat-block" id="p3-cat-2" data-p3-cat="p3-cat-2">
+      <div class="p3-cat-head" style="background:#eff6ff;border-color:#bfdbfe;border-left:6px solid #2563eb;">
+        <h3>분야 2: 미국 경찰 바디캠(Bodycam) 실화 (10개 · Jev 점수 높은 순)</h3>
+        <p>미국 경찰이 가슴에 단 카메라로 찍은 100% 진짜 사건 영상이에요. 미국 법(정보공개법)으로 누구나 쓰게 풀어둔 영상들이라 저작권이 안전하고, 이미 해외에서 100만~1,100만 번 본 검증된 사건만 골랐어요.</p>
+      </div>
+      <div class="p3-list">
+        
+        <div class="p3-item top3" data-p3-cat="p3-cat-2" data-p3-text="수화(손짓 언어)를 공격으로 오해해 청각장애인을 때린 경찰 논란 사건 (100만 뷰) 누가 잘못했는지 시청자들이 댓글창에서 뜨겁게 토론하게 만드는 사건이라 유튜브 알고리즘이 아주 빠르게 밀어줍니다. 당시 현장 바디캠 영상과 이후 경찰 징계·소송 공식 뉴스 기록이 다 공개돼 있어 사실 확인이 완벽합니다. ewu bodycam · 100만 뷰 · 15분 38초">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#eff6ff;color:#2563eb;">🥇 1위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">수화(손짓 언어)를 공격으로 오해해 청각장애인을 때린 경찰 논란 사건 (100만 뷰)</div>
+              <div class="p3-meta">EWU Bodycam · 100만 뷰 · 15분 38초</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#2563eb;">90.1<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:89%;background:#ef4444;"></div></div><b>26.7</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:90%;background:#2563eb;"></div></div><b>27.0</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:90%;background:#16a34a;"></div></div><b>18.0</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:92%;background:#7c3aed;"></div></div><b>18.4</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>누가 잘못했는지 시청자들이 댓글창에서 뜨겁게 토론하게 만드는 사건이라 유튜브 알고리즘이 아주 빠르게 밀어줍니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>당시 현장 바디캠 영상과 이후 경찰 징계·소송 공식 뉴스 기록이 다 공개돼 있어 사실 확인이 완벽합니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=Bq8ftrJBIvI" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=Bq8ftrJBIvI)</a>
+          </div>
+        </div>
+        <div class="p3-item top3" data-p3-cat="p3-cat-2" data-p3-text="경찰관을 차 안에 태운 채 그대로 도망가 버린 용의자 (230만 뷰) 첫 3초에 ‘경찰이 매달린 채 차가 출발한다’는 긴박한 장면이 나와서 시청자가 절대 뒤로가기를 못 누릅니다. 230만 뷰 검증 실화입니다. 차 안팎의 생생한 바디캠과 무전 교신 음성이 그대로 있어 긴장감 넘치는 내레이션과 1:1 매칭이 됩니다. midwest safety · 230만 뷰 · 12분 01초">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#eff6ff;color:#2563eb;">🥈 2위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">경찰관을 차 안에 태운 채 그대로 도망가 버린 용의자 (230만 뷰)</div>
+              <div class="p3-meta">Midwest Safety · 230만 뷰 · 12분 01초</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#2563eb;">89.7<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:93%;background:#ef4444;"></div></div><b>27.9</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:84%;background:#2563eb;"></div></div><b>25.2</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:89%;background:#16a34a;"></div></div><b>17.8</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:94%;background:#7c3aed;"></div></div><b>18.8</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>첫 3초에 ‘경찰이 매달린 채 차가 출발한다’는 긴박한 장면이 나와서 시청자가 절대 뒤로가기를 못 누릅니다. 230만 뷰 검증 실화입니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>차 안팎의 생생한 바디캠과 무전 교신 음성이 그대로 있어 긴장감 넘치는 내레이션과 1:1 매칭이 됩니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=UKgpJL99akk" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=UKgpJL99akk)</a>
+          </div>
+        </div>
+        <div class="p3-item top3" data-p3-cat="p3-cat-2" data-p3-text="경찰 피해 도망가다 스스로 함정에 빠져 100배 큰 죄를 뒤집어쓴 남자 (120만 뷰) ‘그냥 멈췄으면 끝날 일을 왜 저렇게 키웠지?’ 하며 보는 재미가 쏠쏠하고, 해외에서 120만 뷰로 검증된 탄탄한 스토리입니다. 처음 검문부터 도주, 추적, 체포 후 허탈해하는 모습까지 실제 경찰 바디캠으로 1:1 편집 가능합니다. code blue cam · 120만 뷰 · 13분 12초">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#eff6ff;color:#2563eb;">🥉 3위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">경찰 피해 도망가다 스스로 함정에 빠져 100배 큰 죄를 뒤집어쓴 남자 (120만 뷰)</div>
+              <div class="p3-meta">Code Blue Cam · 120만 뷰 · 13분 12초</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#2563eb;">89.6<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:87%;background:#ef4444;"></div></div><b>26.1</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:91%;background:#2563eb;"></div></div><b>27.3</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:88%;background:#16a34a;"></div></div><b>17.6</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:93%;background:#7c3aed;"></div></div><b>18.6</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>‘그냥 멈췄으면 끝날 일을 왜 저렇게 키웠지?’ 하며 보는 재미가 쏠쏠하고, 해외에서 120만 뷰로 검증된 탄탄한 스토리입니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>처음 검문부터 도주, 추적, 체포 후 허탈해하는 모습까지 실제 경찰 바디캠으로 1:1 편집 가능합니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=msHko5-cspg" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=msHko5-cspg)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-2" data-p3-text="경찰 따돌리려다 오히려 딸을 위험에 빠뜨린 아빠의 어리석은 도주 (220만 뷰) 가족이 얽힌 긴장감과 ‘왜 저렇게 무리수를 뒀을까?’ 하는 궁금증이 어우러져 한국 시청자들이 댓글을 엄청나게 다는 유형입니다. 22분 분량의 풀 바디캠 영상이라 처음 대화부터 도주, 검거 후 진술까지 스토리 흐름이 완벽합니다. code blue cam · 220만 뷰 · 22분 55초">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#eff6ff;color:#2563eb;">4위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">경찰 따돌리려다 오히려 딸을 위험에 빠뜨린 아빠의 어리석은 도주 (220만 뷰)</div>
+              <div class="p3-meta">Code Blue Cam · 220만 뷰 · 22분 55초</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#2563eb;">89.0<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:85%;background:#ef4444;"></div></div><b>25.5</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:89%;background:#2563eb;"></div></div><b>26.7</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:91%;background:#16a34a;"></div></div><b>18.2</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:93%;background:#7c3aed;"></div></div><b>18.6</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>가족이 얽힌 긴장감과 ‘왜 저렇게 무리수를 뒀을까?’ 하는 궁금증이 어우러져 한국 시청자들이 댓글을 엄청나게 다는 유형입니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>22분 분량의 풀 바디캠 영상이라 처음 대화부터 도주, 검거 후 진술까지 스토리 흐름이 완벽합니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=iWUOcSBBxNk" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=iWUOcSBBxNk)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-2" data-p3-text="노란 스쿨버스를 훔쳐 타고 도망간 범인의 황당 추격전 (450만 뷰) ‘스쿨버스를 훔쳐서 도망간다’는 말 자체가 썸네일 클릭을 부릅니다. 450만 뷰가 증명한 소재이고, 29분 원본이라 10~15분 롱폼 만들기에 분량이 넉넉합니다. 스쿨버스 추격, 스파이크 스트립 설치, 버스 문 강제 개방 및 체포까지 기승전결이 실제 영상으로 완벽하게 담겨 있습니다. midwest safety · 450만 뷰 · 29분 36초">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#eff6ff;color:#2563eb;">5위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">노란 스쿨버스를 훔쳐 타고 도망간 범인의 황당 추격전 (450만 뷰)</div>
+              <div class="p3-meta">Midwest Safety · 450만 뷰 · 29분 36초</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#2563eb;">88.8<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:91%;background:#ef4444;"></div></div><b>27.3</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:83%;background:#2563eb;"></div></div><b>24.9</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:91%;background:#16a34a;"></div></div><b>18.2</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:92%;background:#7c3aed;"></div></div><b>18.4</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>‘스쿨버스를 훔쳐서 도망간다’는 말 자체가 썸네일 클릭을 부릅니다. 450만 뷰가 증명한 소재이고, 29분 원본이라 10~15분 롱폼 만들기에 분량이 넉넉합니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>스쿨버스 추격, 스파이크 스트립 설치, 버스 문 강제 개방 및 체포까지 기승전결이 실제 영상으로 완벽하게 담겨 있습니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=ME7Nvsh-Nos" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=ME7Nvsh-Nos)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-2" data-p3-text="시속 210km로 도망쳐 차를 박살 낸 뒤 상황이 100배 악화된 남자 (190만 뷰) ‘나쁜 짓 하고 거짓말하다 현장에서 바로 들통나는 사이다 결말’은 유튜브에서 시청 지속시간이 가장 잘 나옵니다. 초고속 추격전, 파손된 차량 현장, 경찰의 추궁과 증거 발견 장면이 전부 바디캠에 찍혀 있습니다. code blue cam · 190만 뷰 · 14분 52초">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#eff6ff;color:#2563eb;">6위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">시속 210km로 도망쳐 차를 박살 낸 뒤 상황이 100배 악화된 남자 (190만 뷰)</div>
+              <div class="p3-meta">Code Blue Cam · 190만 뷰 · 14분 52초</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#2563eb;">87.8<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:89%;background:#ef4444;"></div></div><b>26.7</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:83%;background:#2563eb;"></div></div><b>24.9</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:89%;background:#16a34a;"></div></div><b>17.8</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:92%;background:#7c3aed;"></div></div><b>18.4</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>‘나쁜 짓 하고 거짓말하다 현장에서 바로 들통나는 사이다 결말’은 유튜브에서 시청 지속시간이 가장 잘 나옵니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>초고속 추격전, 파손된 차량 현장, 경찰의 추궁과 증거 발견 장면이 전부 바디캠에 찍혀 있습니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=2gcU04REKMM" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=2gcU04REKMM)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-2" data-p3-text="현실에서 gta 게임처럼 도망치다 잡힌 18세 무면허 운전자 (480만 뷰) 자동차 추격전은 총격이나 피가 나오지 않아 노딱(수익 제한) 걱정이 없고, 1초도 눈을 뗄 수 없어 시청 지속시간이 엄청나게 길게 나옵니다. 경찰차 블랙박스(대시캠) + 경찰 가슴 바디캠 + 헬기 추적 화면까지 입체적인 실제 증거 영상이 다 들어 있습니다. midwest safety · 480만 뷰 · 13분 52초">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#eff6ff;color:#2563eb;">7위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">현실에서 GTA 게임처럼 도망치다 잡힌 18세 무면허 운전자 (480만 뷰)</div>
+              <div class="p3-meta">Midwest Safety · 480만 뷰 · 13분 52초</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#2563eb;">87.6<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:85%;background:#ef4444;"></div></div><b>25.5</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:83%;background:#2563eb;"></div></div><b>24.9</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:93%;background:#16a34a;"></div></div><b>18.6</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:93%;background:#7c3aed;"></div></div><b>18.6</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>자동차 추격전은 총격이나 피가 나오지 않아 노딱(수익 제한) 걱정이 없고, 1초도 눈을 뗄 수 없어 시청 지속시간이 엄청나게 길게 나옵니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>경찰차 블랙박스(대시캠) + 경찰 가슴 바디캠 + 헬기 추적 화면까지 입체적인 실제 증거 영상이 다 들어 있습니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=HmroSpZzPPM" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=HmroSpZzPPM)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-2" data-p3-text="야생 숲속에서 3일간 실종된 가족을 기적처럼 살려낸 미국 경찰 (140만 뷰) 범죄가 아니라 ‘기적의 구조 감동 실화’라서 노딱 위험이 아예 0%이고, 6070 어르신부터 가족 단위 시청자까지 좋아합니다. 수색 장면, 실종 가족을 처음 발견하는 순간의 환호, 구조 과정이 17분 바디캠에 고스란히 담겨 있습니다. ewu bodycam · 140만 뷰 · 17분 17초">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#eff6ff;color:#2563eb;">8위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">야생 숲속에서 3일간 실종된 가족을 기적처럼 살려낸 미국 경찰 (140만 뷰)</div>
+              <div class="p3-meta">EWU Bodycam · 140만 뷰 · 17분 17초</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#2563eb;">85.5<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:81%;background:#ef4444;"></div></div><b>24.3</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:84%;background:#2563eb;"></div></div><b>25.2</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:89%;background:#16a34a;"></div></div><b>17.8</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:91%;background:#7c3aed;"></div></div><b>18.2</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>범죄가 아니라 ‘기적의 구조 감동 실화’라서 노딱 위험이 아예 0%이고, 6070 어르신부터 가족 단위 시청자까지 좋아합니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>수색 장면, 실종 가족을 처음 발견하는 순간의 환호, 구조 과정이 17분 바디캠에 고스란히 담겨 있습니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=Mhs2OC55Yb4" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=Mhs2OC55Yb4)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-2" data-p3-text="비상 착륙한 경비행기에서 쏟아져 나온 마약 밀수범들 (1,100만 뷰) ‘도와주러 간 경찰이 하필 마약 비행기를 잡았다’는 반전이 영화보다 더 재미있습니다. 이미 해외에서 1,100만 번이나 본 검증된 대박 사건입니다. 미국 정보공개법(foia)으로 공개된 실제 경찰 바디캠 풀영상이라 저작권 안전하고, 비행기 수색부터 체포까지 100% 실제 현장 화면입니다. midwest safety · 1,100만 뷰 · 16분 52초">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#eff6ff;color:#2563eb;">9위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">비상 착륙한 경비행기에서 쏟아져 나온 마약 밀수범들 (1,100만 뷰)</div>
+              <div class="p3-meta">Midwest Safety · 1,100만 뷰 · 16분 52초</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#2563eb;">84.9<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:92%;background:#ef4444;"></div></div><b>27.6</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:77%;background:#2563eb;"></div></div><b>23.1</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:80%;background:#16a34a;"></div></div><b>16.0</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:91%;background:#7c3aed;"></div></div><b>18.2</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>‘도와주러 간 경찰이 하필 마약 비행기를 잡았다’는 반전이 영화보다 더 재미있습니다. 이미 해외에서 1,100만 번이나 본 검증된 대박 사건입니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>미국 정보공개법(FOIA)으로 공개된 실제 경찰 바디캠 풀영상이라 저작권 안전하고, 비행기 수색부터 체포까지 100% 실제 현장 화면입니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=56GP1O56cSI" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=56GP1O56cSI)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-2" data-p3-text="이사 트럭(u-haul) 뒤칸 문을 열자마자 커플을 즉시 체포한 경찰 (180만 뷰) ‘트럭 뒤에 도대체 뭐가 들어 있었을까?’ 하는 호기심 하나로 8분 내내 끝까지 보게 만드는 최고의 후킹 구조입니다. 커플의 앞뒤 안 맞는 변명 대화와 트럭 문이 열리는 결정적 순간이 100% 실제 영상으로 남아 있습니다. ewu bodycam · 180만 뷰 · 8분 46초">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#eff6ff;color:#2563eb;">10위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">이사 트럭(U-Haul) 뒤칸 문을 열자마자 커플을 즉시 체포한 경찰 (180만 뷰)</div>
+              <div class="p3-meta">EWU Bodycam · 180만 뷰 · 8분 46초</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#2563eb;">84.5<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:90%;background:#ef4444;"></div></div><b>27.0</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:73%;background:#2563eb;"></div></div><b>21.9</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:86%;background:#16a34a;"></div></div><b>17.2</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:92%;background:#7c3aed;"></div></div><b>18.4</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>‘트럭 뒤에 도대체 뭐가 들어 있었을까?’ 하는 호기심 하나로 8분 내내 끝까지 보게 만드는 최고의 후킹 구조입니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>커플의 앞뒤 안 맞는 변명 대화와 트럭 문이 열리는 결정적 순간이 100% 실제 영상으로 남아 있습니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=iuGPu9wjkQ8" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=iuGPu9wjkQ8)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p3-cat-block" id="p3-cat-3" data-p3-cat="p3-cat-3">
+      <div class="p3-cat-head" style="background:#f0fdf4;border-color:#bbf7d0;border-left:6px solid #16a34a;">
+        <h3>분야 3: 어르신(6070) 거실 TV용 롱폼 (10개 · Jev 점수 높은 순)</h3>
+        <p>할머니·할아버지가 거실 큰 TV로 틀어놓고 끝까지 보시는 건강·연금·현대사·인생 사연이에요. 20~50분씩 길게 틀어놓으셔서 시청시간이 엄청 빠르게 쌓이고, 광고 단가도 높아요.</p>
+      </div>
+      <div class="p3-list">
+        
+        <div class="p3-item top3" data-p3-cat="p3-cat-3" data-p3-text="62~69년생 기초연금 한 푼도 못 받을 수 있다? 바뀌는 새 기준 총정리 (88만 뷰) ‘62~69년생’처럼 본인 나이가 제목에 딱 찍혀 있으면 어르신들이 무조건 클릭합니다. 복지로·보건복지부 공식 자료라 팩트도 안전합니다. 보건복지부 공식 보도자료, 소득인정액 계산표, o/x 퀴즈 화면으로 초등학생도 이해할 만큼 쉽게 보여줄 수 있습니다. 참고 88만 뷰 · 8분 06초 · 기초연금/정책">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#f0fdf4;color:#16a34a;">🥇 1위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">62~69년생 기초연금 한 푼도 못 받을 수 있다? 바뀌는 새 기준 총정리 (88만 뷰)</div>
+              <div class="p3-meta">참고 88만 뷰 · 8분 06초 · 기초연금/정책</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#16a34a;">68.2<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:84%;background:#ef4444;"></div></div><b>25.2</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:70%;background:#2563eb;"></div></div><b>21.0</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:16%;background:#16a34a;"></div></div><b>3.2</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:94%;background:#7c3aed;"></div></div><b>18.8</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>‘62~69년생’처럼 본인 나이가 제목에 딱 찍혀 있으면 어르신들이 무조건 클릭합니다. 복지로·보건복지부 공식 자료라 팩트도 안전합니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>보건복지부 공식 보도자료, 소득인정액 계산표, O/X 퀴즈 화면으로 초등학생도 이해할 만큼 쉽게 보여줄 수 있습니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=CWmVvSJxVhY" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=CWmVvSJxVhY)</a>
+          </div>
+        </div>
+        <div class="p3-item top3" data-p3-cat="p3-cat-3" data-p3-text="“모르면 세금 2배 낸다” 국민연금·건강보험료 4가지 함정 피하는 법 (153만 뷰) 내 지갑에서 돈이 새는 걸 막아주는 정보라 6070 어르신들이 메모하면서 처음부터 끝까지 다 봅니다. 금융/연금 분야는 광고 단가(rpm)도 높습니다. 국민연금공단·건보공단 공식 기준표, 실제 수령액 계산 비교표를 큰 글씨 그래픽으로 보여주면 신뢰도가 200% 올라갑니다. 참고 153만 뷰 · 21분 01초 · 연금/세금">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#f0fdf4;color:#16a34a;">🥈 2위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">“모르면 세금 2배 낸다” 국민연금·건강보험료 4가지 함정 피하는 법 (153만 뷰)</div>
+              <div class="p3-meta">참고 153만 뷰 · 21분 01초 · 연금/세금</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#16a34a;">67.5<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:79%;background:#ef4444;"></div></div><b>23.7</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:66%;background:#2563eb;"></div></div><b>19.8</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:28%;background:#16a34a;"></div></div><b>5.6</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:92%;background:#7c3aed;"></div></div><b>18.4</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>내 지갑에서 돈이 새는 걸 막아주는 정보라 6070 어르신들이 메모하면서 처음부터 끝까지 다 봅니다. 금융/연금 분야는 광고 단가(RPM)도 높습니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>국민연금공단·건보공단 공식 기준표, 실제 수령액 계산 비교표를 큰 글씨 그래픽으로 보여주면 신뢰도가 200% 올라갑니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=MZSKvau458U" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=MZSKvau458U)</a>
+          </div>
+        </div>
+        <div class="p3-item top3" data-p3-cat="p3-cat-3" data-p3-text="2020년 이후 세계 국제 정세를 완전히 뒤집은 3가지 대사건 (63만 뷰) 6070 남성 시청자들이 뉴스 대신 유튜브로 가장 많이 챙겨 보는 분야가 국제정세·경제입니다. 20분 넘게 거실 tv로 쭉 봅니다. 세계 지도 애니메이션, 유가·환율 그래프, 뉴스 헤드라인 캡처로 자료 화면을 깔끔하게 구성할 수 있습니다. 참고 63만 뷰 · 22분 24초 · 국제정세/경제">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#f0fdf4;color:#16a34a;">🥉 3위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">2020년 이후 세계 국제 정세를 완전히 뒤집은 3가지 대사건 (63만 뷰)</div>
+              <div class="p3-meta">참고 63만 뷰 · 22분 24초 · 국제정세/경제</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#16a34a;">66.8<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:65%;background:#ef4444;"></div></div><b>19.5</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:85%;background:#2563eb;"></div></div><b>25.5</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:35%;background:#16a34a;"></div></div><b>7.0</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:74%;background:#7c3aed;"></div></div><b>14.8</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>6070 남성 시청자들이 뉴스 대신 유튜브로 가장 많이 챙겨 보는 분야가 국제정세·경제입니다. 20분 넘게 거실 TV로 쭉 봅니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>세계 지도 애니메이션, 유가·환율 그래프, 뉴스 헤드라인 캡처로 자료 화면을 깔끔하게 구성할 수 있습니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=yhoXKzFRrqQ" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=yhoXKzFRrqQ)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-3" data-p3-text="“오히려 근육이 빠집니다” 60대 이후 최고·최악의 운동 총정리 (240만 뷰) ‘내가 매일 하던 운동이 오히려 몸을 망친다고?’ 하는 충격 때문에 안 눌러볼 수가 없습니다. 240만 뷰로 검증된 효자 주제입니다. 올바른 자세 vs 나쁜 자세 비교 그림, 근육·관절 도해, 큰 글씨 요약 카드로 어르신 눈높이에 딱 맞출 수 있습니다. 참고 240만 뷰 · 22분 10초 · 건강/운동">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#f0fdf4;color:#16a34a;">4위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">“오히려 근육이 빠집니다” 60대 이후 최고·최악의 운동 총정리 (240만 뷰)</div>
+              <div class="p3-meta">참고 240만 뷰 · 22분 10초 · 건강/운동</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#16a34a;">65.3<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:85%;background:#ef4444;"></div></div><b>25.5</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:60%;background:#2563eb;"></div></div><b>18.0</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:16%;background:#16a34a;"></div></div><b>3.2</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:93%;background:#7c3aed;"></div></div><b>18.6</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>‘내가 매일 하던 운동이 오히려 몸을 망친다고?’ 하는 충격 때문에 안 눌러볼 수가 없습니다. 240만 뷰로 검증된 효자 주제입니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>올바른 자세 vs 나쁜 자세 비교 그림, 근육·관절 도해, 큰 글씨 요약 카드로 어르신 눈높이에 딱 맞출 수 있습니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=-3HYshFp2sI" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=-3HYshFp2sI)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-3" data-p3-text="6.25 전쟁, 잊을 수 없는 영웅들과 분단의 결정적 순간 (144만 뷰) 어르신들이 가장 깊이 몰입하고 애국심과 향수를 느끼는 주제입니다. 댓글에 본인 경험담을 길게 적어주셔서 채널 충성도가 폭발합니다. 미국 국립문서기록관리청(nara)·국가기록원 공개 흑백 기록 사진(저작권 만료·공공누리)과 전선 지도로 1:1 물증을 완벽히 채웁니다. 참고 144만 뷰 · 10분 23초 · 현대사/실화">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#f0fdf4;color:#16a34a;">5위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">6.25 전쟁, 잊을 수 없는 영웅들과 분단의 결정적 순간 (144만 뷰)</div>
+              <div class="p3-meta">참고 144만 뷰 · 10분 23초 · 현대사/실화</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#16a34a;">64.3<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:29%;background:#ef4444;"></div></div><b>8.7</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:88%;background:#2563eb;"></div></div><b>26.4</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:55%;background:#16a34a;"></div></div><b>11.0</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:91%;background:#7c3aed;"></div></div><b>18.2</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>어르신들이 가장 깊이 몰입하고 애국심과 향수를 느끼는 주제입니다. 댓글에 본인 경험담을 길게 적어주셔서 채널 충성도가 폭발합니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>미국 국립문서기록관리청(NARA)·국가기록원 공개 흑백 기록 사진(저작권 만료·공공누리)과 전선 지도로 1:1 물증을 완벽히 채웁니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=-ECci4sNuYc" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=-ECci4sNuYc)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-3" data-p3-text="이혼 3일 만에 집 내놓으라는 며느리… 시어머니의 통쾌한 반전 사연 (21만 뷰) 54분짜리 긴 영상인데도 집안일하면서 라디오처럼 끝까지 틀어놓기 때문에 시청 시간(4,000시간)이 압도적으로 빨리 쌓입니다. 저작권 걱정 없는 창작 대본 + 따뜻한 일러스트/ai 정지 그림 + 차분한 성우 낭독만으로 제작비 거의 없이 대량 생산 가능합니다. 참고 21만 뷰 · 54분 22초 · 시니어 사연">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#f0fdf4;color:#16a34a;">6위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">이혼 3일 만에 집 내놓으라는 며느리… 시어머니의 통쾌한 반전 사연 (21만 뷰)</div>
+              <div class="p3-meta">참고 21만 뷰 · 54분 22초 · 시니어 사연</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#16a34a;">61.8<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:89%;background:#ef4444;"></div></div><b>26.7</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:9%;background:#2563eb;"></div></div><b>2.7</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:71%;background:#16a34a;"></div></div><b>14.2</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:91%;background:#7c3aed;"></div></div><b>18.2</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>54분짜리 긴 영상인데도 집안일하면서 라디오처럼 끝까지 틀어놓기 때문에 시청 시간(4,000시간)이 압도적으로 빨리 쌓입니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>저작권 걱정 없는 창작 대본 + 따뜻한 일러스트/AI 정지 그림 + 차분한 성우 낭독만으로 제작비 거의 없이 대량 생산 가능합니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=Qh9Du3WMFFU" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=Qh9Du3WMFFU)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-3" data-p3-text="“약 없이 막힌 혈관 뚫는다” 돌연사 막는 3천 원짜리 음식의 비밀 (84만 뷰) 거실 tv로 틀어놓고 라디오처럼 들으면서 ‘오늘 마트 가서 사야겠다’고 생각하게 만드는 생활 밀착형 효자 소재입니다. 의학 논문 수치 요약, 식품 영양 성분표, 혈관 변화 일러스트를 큰 글씨로 정리하면 어르신 가독성이 최고입니다. 참고 84만 뷰 · 38분 37초 · 혈관/음식">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#f0fdf4;color:#16a34a;">7위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">“약 없이 막힌 혈관 뚫는다” 돌연사 막는 3천 원짜리 음식의 비밀 (84만 뷰)</div>
+              <div class="p3-meta">참고 84만 뷰 · 38분 37초 · 혈관/음식</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#16a34a;">60.9<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:84%;background:#ef4444;"></div></div><b>25.2</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:47%;background:#2563eb;"></div></div><b>14.1</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:17%;background:#16a34a;"></div></div><b>3.4</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:91%;background:#7c3aed;"></div></div><b>18.2</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>거실 TV로 틀어놓고 라디오처럼 들으면서 ‘오늘 마트 가서 사야겠다’고 생각하게 만드는 생활 밀착형 효자 소재입니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>의학 논문 수치 요약, 식품 영양 성분표, 혈관 변화 일러스트를 큰 글씨로 정리하면 어르신 가독성이 최고입니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=bJm5fI4lJHg" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=bJm5fI4lJHg)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-3" data-p3-text="“딱 2주만 해보세요” 나이 들어도 치매 막고 기억력 지키는 뇌 습관 (445만 뷰) 어르신들이 가장 걱정하는 병 1위가 치매입니다. 참고 영상이 무려 445만 뷰나 터졌을 만큼 수요가 엄청나고, 거실 tv로 끝까지 집중해서 봅니다. 대학병원·질병관리청 공개 치매 예방 수칙, 뇌 구조 그림, 쉬운 체크리스트 도표로 1:1 화면을 깔끔하게 채울 수 있습니다. 참고 445만 뷰 · 21분 52초 · 건강/치매">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#f0fdf4;color:#16a34a;">8위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">“딱 2주만 해보세요” 나이 들어도 치매 막고 기억력 지키는 뇌 습관 (445만 뷰)</div>
+              <div class="p3-meta">참고 445만 뷰 · 21분 52초 · 건강/치매</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#16a34a;">59.0<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:59%;background:#ef4444;"></div></div><b>17.7</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:65%;background:#2563eb;"></div></div><b>19.5</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:16%;background:#16a34a;"></div></div><b>3.2</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:93%;background:#7c3aed;"></div></div><b>18.6</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>어르신들이 가장 걱정하는 병 1위가 치매입니다. 참고 영상이 무려 445만 뷰나 터졌을 만큼 수요가 엄청나고, 거실 TV로 끝까지 집중해서 봅니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>대학병원·질병관리청 공개 치매 예방 수칙, 뇌 구조 그림, 쉬운 체크리스트 도표로 1:1 화면을 깔끔하게 채울 수 있습니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=FOY7HRMf--g" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=FOY7HRMf--g)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-3" data-p3-text="“나 죽거든 산소도 제사도 필요 없다” 70대 이후 꼭 알아야 할 인생 지혜 (14만 뷰) 1시간 15분짜리 초장편이라 한 번 틀면 밤에 잠들 때까지 계속 재생됩니다. 어르신 구독자와 좋아요 비율이 가장 높은 힐링 장르입니다. 명언·핵심 문장 큰 글씨 자막, 평온한 자연 풍경 영상, 차분한 낭독 오디오 조합으로 깔끔하게 제작할 수 있습니다. 참고 14만 뷰 · 1시간 15분 · 인생 지혜">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#f0fdf4;color:#16a34a;">9위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">“나 죽거든 산소도 제사도 필요 없다” 70대 이후 꼭 알아야 할 인생 지혜 (14만 뷰)</div>
+              <div class="p3-meta">참고 14만 뷰 · 1시간 15분 · 인생 지혜</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#16a34a;">58.7<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:77%;background:#ef4444;"></div></div><b>23.1</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:46%;background:#2563eb;"></div></div><b>13.8</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:16%;background:#16a34a;"></div></div><b>3.2</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:93%;background:#7c3aed;"></div></div><b>18.6</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>1시간 15분짜리 초장편이라 한 번 틀면 밤에 잠들 때까지 계속 재생됩니다. 어르신 구독자와 좋아요 비율이 가장 높은 힐링 장르입니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>명언·핵심 문장 큰 글씨 자막, 평온한 자연 풍경 영상, 차분한 낭독 오디오 조합으로 깔끔하게 제작할 수 있습니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=0qZrvC4_zSw" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=0qZrvC4_zSw)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-3" data-p3-text="“계란 그냥 먹지 마세요” 치매 예방·눈 건강에 최고인 계란 먹는 법 (50만 뷰) 집 냉장고에 누구나 있는 ‘계란’ 이야기라 거부감이 없고, ‘그냥 먹지 마세요’라는 반전 문구가 클릭률을 확 끌어올립니다. 계란 조리법 비교 사진, 영양소 흡수율 그래프, 함께 먹으면 좋은 음식 궁합표로 화면 구성이 매우 쉽습니다. 참고 50만 뷰 · 14분 47초 · 식습관/건강">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#f0fdf4;color:#16a34a;">10위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">“계란 그냥 먹지 마세요” 치매 예방·눈 건강에 최고인 계란 먹는 법 (50만 뷰)</div>
+              <div class="p3-meta">참고 50만 뷰 · 14분 47초 · 식습관/건강</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#16a34a;">56.2<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:65%;background:#ef4444;"></div></div><b>19.5</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:51%;background:#2563eb;"></div></div><b>15.3</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:15%;background:#16a34a;"></div></div><b>3.0</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:92%;background:#7c3aed;"></div></div><b>18.4</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>집 냉장고에 누구나 있는 ‘계란’ 이야기라 거부감이 없고, ‘그냥 먹지 마세요’라는 반전 문구가 클릭률을 확 끌어올립니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>계란 조리법 비교 사진, 영양소 흡수율 그래프, 함께 먹으면 좋은 음식 궁합표로 화면 구성이 매우 쉽습니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=k-HJi7Q-_zk" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=k-HJi7Q-_zk)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p3-cat-block" id="p3-cat-4" data-p3-cat="p3-cat-4">
+      <div class="p3-cat-head" style="background:#fffbeb;border-color:#fde68a;border-left:6px solid #d97706;">
+        <h3>분야 4: 해외 터진 &#x27;한국 빈집&#x27; &amp; &#x27;누운 소재&#x27; (10개 · Jev 점수 높은 순)</h3>
+        <p>외국 유튜브에서 87만~2,200만 번이나 터졌는데 한국 유튜브엔 아직 제대로 만든 사람이 없거나(한국 빈집), 옛날에 떴다가 요즘 조용해진(누운 소재) 꿀단지들이에요!</p>
+      </div>
+      <div class="p3-list">
+        
+        <div class="p3-item top3" data-p3-cat="p3-cat-4" data-p3-text="역사상 가장 거대한 ‘가짜 명화’ 미술 사기극 (160만 뷰) ‘전문가들을 다 속인 천재 위조범’ 이야기는 지루할 틈이 없습니다. 미술·범죄·반전이 다 섞여 있어 남녀노소 다 좋아하고 한국엔 경쟁 영상이 적습니다. 공개된 위작 vs 진품 그림 비교, x선 감정 사진, 경매 기록 자료가 풍부해 화면 구성이 고급스럽습니다. neo · 160만 뷰 · 21분 17초">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#fffbeb;color:#d97706;">🥇 1위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">역사상 가장 거대한 ‘가짜 명화’ 미술 사기극 (160만 뷰)</div>
+              <div class="p3-meta">neo · 160만 뷰 · 21분 17초</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#d97706;">83.0<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:92%;background:#ef4444;"></div></div><b>27.6</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:74%;background:#2563eb;"></div></div><b>22.2</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:89%;background:#16a34a;"></div></div><b>17.8</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:77%;background:#7c3aed;"></div></div><b>15.4</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>‘전문가들을 다 속인 천재 위조범’ 이야기는 지루할 틈이 없습니다. 미술·범죄·반전이 다 섞여 있어 남녀노소 다 좋아하고 한국엔 경쟁 영상이 적습니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>공개된 위작 vs 진품 그림 비교, X선 감정 사진, 경매 기록 자료가 풍부해 화면 구성이 고급스럽습니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=T4b57E7oHYc" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=T4b57E7oHYc)</a>
+          </div>
+        </div>
+        <div class="p3-item top3" data-p3-cat="p3-cat-4" data-p3-text="20대 백수 청년 둘이 미 국방부에 4,000억 무기 납품 따낸 황당 실화 (260만 뷰) ‘스물두 살 백수가 미국 정부 돈을 4천억이나 따냈다’는 실화가 소설보다 더 짜릿합니다. 한국 유튜브엔 깊이 다룬 롱폼이 거의 없는 빈집입니다. 미국 의회 청문회 기록, 실제 계약서·뉴스 기사, 이동 경로 지도로 1:1 물증을 꽉 채울 수 있습니다. fern · 260만 뷰 · 46분 48초">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#fffbeb;color:#d97706;">🥈 2위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">20대 백수 청년 둘이 미 국방부에 4,000억 무기 납품 따낸 황당 실화 (260만 뷰)</div>
+              <div class="p3-meta">Fern · 260만 뷰 · 46분 48초</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#d97706;">82.9<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:93%;background:#ef4444;"></div></div><b>27.9</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:76%;background:#2563eb;"></div></div><b>22.8</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:84%;background:#16a34a;"></div></div><b>16.8</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:77%;background:#7c3aed;"></div></div><b>15.4</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>‘스물두 살 백수가 미국 정부 돈을 4천억이나 따냈다’는 실화가 소설보다 더 짜릿합니다. 한국 유튜브엔 깊이 다룬 롱폼이 거의 없는 빈집입니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>미국 의회 청문회 기록, 실제 계약서·뉴스 기사, 이동 경로 지도로 1:1 물증을 꽉 채울 수 있습니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=JN_d89-FEKk" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=JN_d89-FEKk)</a>
+          </div>
+        </div>
+        <div class="p3-item top3" data-p3-cat="p3-cat-4" data-p3-text="2차대전 독일 암호기 ‘에니그마’의 미친 기계 구조와 해독 실화 (2,200만 뷰) 해외에서 무려 2,200만 번이나 본 초대박 소재인데, 한국 유튜브엔 이렇게 쉽고 재미있게 기계 원리까지 풀어준 롱폼이 거의 없습니다(한국 빈집!). 2차대전 공공 기록 사진, 에니그마 톱니바퀴 작동 도식, 암호 해독 과정 그래픽 등 공개 자료가 넘쳐납니다. veritasium · 2,200만 뷰 · 47분 42초">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#fffbeb;color:#d97706;">🥉 3위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">2차대전 독일 암호기 ‘에니그마’의 미친 기계 구조와 해독 실화 (2,200만 뷰)</div>
+              <div class="p3-meta">Veritasium · 2,200만 뷰 · 47분 42초</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#d97706;">82.3<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:76%;background:#ef4444;"></div></div><b>22.8</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:87%;background:#2563eb;"></div></div><b>26.1</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:78%;background:#16a34a;"></div></div><b>15.6</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:89%;background:#7c3aed;"></div></div><b>17.8</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>해외에서 무려 2,200만 번이나 본 초대박 소재인데, 한국 유튜브엔 이렇게 쉽고 재미있게 기계 원리까지 풀어준 롱폼이 거의 없습니다(한국 빈집!).</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>2차대전 공공 기록 사진, 에니그마 톱니바퀴 작동 도식, 암호 해독 과정 그래픽 등 공개 자료가 넘쳐납니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=JsBZOcqZerk" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=JsBZOcqZerk)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-4" data-p3-text="엔진 다 꺼진 여객기가 기적처럼 활주로에 착륙한 ‘불가능한 착륙’ 실화 (280만 뷰) 항공 사고·기적의 생환 실화는 전 세계에서 완청률(끝까지 보는 비율)이 가장 높은 장르입니다. 오래된 사건이라 한국에 최근 고퀄 롱폼이 없는 ‘누운 소재’입니다. 실제 비행 경로 지도, 관제탑 교신 기록, 고도 그래프, 항공기 모형 애니메이션으로 긴장감 있게 재구성할 수 있습니다. neo · 280만 뷰 · 27분 19초">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#fffbeb;color:#d97706;">4위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">엔진 다 꺼진 여객기가 기적처럼 활주로에 착륙한 ‘불가능한 착륙’ 실화 (280만 뷰)</div>
+              <div class="p3-meta">neo · 280만 뷰 · 27분 19초</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#d97706;">81.1<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:90%;background:#ef4444;"></div></div><b>27.0</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:71%;background:#2563eb;"></div></div><b>21.3</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:86%;background:#16a34a;"></div></div><b>17.2</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:78%;background:#7c3aed;"></div></div><b>15.6</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>항공 사고·기적의 생환 실화는 전 세계에서 완청률(끝까지 보는 비율)이 가장 높은 장르입니다. 오래된 사건이라 한국에 최근 고퀄 롱폼이 없는 ‘누운 소재’입니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>실제 비행 경로 지도, 관제탑 교신 기록, 고도 그래프, 항공기 모형 애니메이션으로 긴장감 있게 재구성할 수 있습니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=5Nkad_6aigM" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=5Nkad_6aigM)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-4" data-p3-text="인터넷 일반 네티즌들이 130억짜리 거대 사기꾼을 직접 추적해 잡은 실화 (630만 뷰) ‘일반인들이 탐정처럼 130억 사기꾼을 잡았다’는 이야기는 한국 시청자가 제일 좋아하는 사이다 추리물인데, 한국 유튜브엔 거의 안 다뤄진 빈집 소재입니다. 공개된 sns 단서, 위성 지도 추적, 사건 타임라인 도표와 3d 스타일 재연 그림으로 몰입감 있게 만들 수 있습니다. fern · 630만 뷰 · 48분 10초">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#fffbeb;color:#d97706;">5위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">인터넷 일반 네티즌들이 130억짜리 거대 사기꾼을 직접 추적해 잡은 실화 (630만 뷰)</div>
+              <div class="p3-meta">Fern · 630만 뷰 · 48분 10초</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#d97706;">79.3<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:89%;background:#ef4444;"></div></div><b>26.7</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:66%;background:#2563eb;"></div></div><b>19.8</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:84%;background:#16a34a;"></div></div><b>16.8</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:80%;background:#7c3aed;"></div></div><b>16.0</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>‘일반인들이 탐정처럼 130억 사기꾼을 잡았다’는 이야기는 한국 시청자가 제일 좋아하는 사이다 추리물인데, 한국 유튜브엔 거의 안 다뤄진 빈집 소재입니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>공개된 SNS 단서, 위성 지도 추적, 사건 타임라인 도표와 3D 스타일 재연 그림으로 몰입감 있게 만들 수 있습니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=oc8G53Tbsvs" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=oc8G53Tbsvs)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-4" data-p3-text="리비아 독재자 카다피가 ‘스위스’를 지구에서 지워버리려 했던 황당 실화 (87만 뷰) ‘나라 하나를 지도에서 지우자고 un에서 발표했다’는 말이 너무 황당해서 클릭률이 터집니다. 한국 유튜브엔 거의 없는 100% 빈집 국제 실화입니다. un 총회 실제 연설 기록, 스위스 분할 지도 제안서, 당시 뉴스 사진 등 역사 물증이 그대로 남아 있습니다. neo · 87만 뷰 · 26분 40초">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#fffbeb;color:#d97706;">6위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">리비아 독재자 카다피가 ‘스위스’를 지구에서 지워버리려 했던 황당 실화 (87만 뷰)</div>
+              <div class="p3-meta">neo · 87만 뷰 · 26분 40초</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#d97706;">79.2<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:92%;background:#ef4444;"></div></div><b>27.6</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:68%;background:#2563eb;"></div></div><b>20.4</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:82%;background:#16a34a;"></div></div><b>16.4</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:74%;background:#7c3aed;"></div></div><b>14.8</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>‘나라 하나를 지도에서 지우자고 UN에서 발표했다’는 말이 너무 황당해서 클릭률이 터집니다. 한국 유튜브엔 거의 없는 100% 빈집 국제 실화입니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>UN 총회 실제 연설 기록, 스위스 분할 지도 제안서, 당시 뉴스 사진 등 역사 물증이 그대로 남아 있습니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=4S_5w5ptiK0" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=4S_5w5ptiK0)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-4" data-p3-text="cia 본부 앞마당에 세워진 35년째 안 풀린 암호 조각상 ‘크립토스’ (940만 뷰) ‘미국 최고 정보기관 cia 앞마당 암호를 아무도 못 풀었다’는 설정이 호기심 끝판왕입니다. 예전에 화제였다가 요즘 한국에 새 롱폼이 없는 대표 ‘누운 소재’입니다. 실제 크립토스 조각상 공개 사진, 4단계 암호 문자표, 해독 힌트 문장 등 시각 자료가 100% 공개돼 있습니다. lemmino · 940만 뷰 · 47분 01초">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#fffbeb;color:#d97706;">7위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">CIA 본부 앞마당에 세워진 35년째 안 풀린 암호 조각상 ‘크립토스’ (940만 뷰)</div>
+              <div class="p3-meta">LEMMiNO · 940만 뷰 · 47분 01초</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#d97706;">77.3<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:85%;background:#ef4444;"></div></div><b>25.5</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:88%;background:#2563eb;"></div></div><b>26.4</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:47%;background:#16a34a;"></div></div><b>9.4</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:80%;background:#7c3aed;"></div></div><b>16.0</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>‘미국 최고 정보기관 CIA 앞마당 암호를 아무도 못 풀었다’는 설정이 호기심 끝판왕입니다. 예전에 화제였다가 요즘 한국에 새 롱폼이 없는 대표 ‘누운 소재’입니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>실제 크립토스 조각상 공개 사진, 4단계 암호 문자표, 해독 힌트 문장 등 시각 자료가 100% 공개돼 있습니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=jVpsLMCIB0Y" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=jVpsLMCIB0Y)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-4" data-p3-text="중국이 사막 한가운데에 ‘가짜 미군 항공모함’을 만든 진짜 이유 (280만 뷰) ‘바다도 없는 사막에 왜 거대한 항공모함을 지었지?’ 하는 썸네일 사진 한 장이 엄청난 클릭을 부릅니다. 한국 시청자 관심도(미국 vs 중국)도 최고입니다. 실제 위성 사진(구글 어스/공개 보도 위성), 미사일 사거리 지도, 항공모함 크기 비교 도표로 1:1 증거 화면이 완벽합니다. neo · 280만 뷰 · 15분 24초">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#fffbeb;color:#d97706;">8위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">중국이 사막 한가운데에 ‘가짜 미군 항공모함’을 만든 진짜 이유 (280만 뷰)</div>
+              <div class="p3-meta">neo · 280만 뷰 · 15분 24초</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#d97706;">73.5<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:90%;background:#ef4444;"></div></div><b>27.0</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:65%;background:#2563eb;"></div></div><b>19.5</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:55%;background:#16a34a;"></div></div><b>11.0</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:80%;background:#7c3aed;"></div></div><b>16.0</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>‘바다도 없는 사막에 왜 거대한 항공모함을 지었지?’ 하는 썸네일 사진 한 장이 엄청난 클릭을 부릅니다. 한국 시청자 관심도(미국 vs 중국)도 최고입니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>실제 위성 사진(구글 어스/공개 보도 위성), 미사일 사거리 지도, 항공모함 크기 비교 도표로 1:1 증거 화면이 완벽합니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=HGQzlpu2I-I" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=HGQzlpu2I-I)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-4" data-p3-text="핵전쟁 나면 뜨는 미국 대통령 ‘종말의 비행기(e-4b)’ 내부 비밀 (310만 뷰) ‘핵전쟁 날 때 대통령만 타는 비밀 비행기’라는 말만 들어도 남성·어르신·청소년 모두 클릭합니다. 한국엔 제대로 된 15분 해부 롱폼이 드뭅니다. 미 국방부(dvids) 공개 무료 고화질 사진·영상과 비행기 단면도 그래픽을 저작권 걱정 없이 쓸 수 있습니다. neo · 310만 뷰 · 15분 19초">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#fffbeb;color:#d97706;">9위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">핵전쟁 나면 뜨는 미국 대통령 ‘종말의 비행기(E-4B)’ 내부 비밀 (310만 뷰)</div>
+              <div class="p3-meta">neo · 310만 뷰 · 15분 19초</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#d97706;">71.0<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:84%;background:#ef4444;"></div></div><b>25.2</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:78%;background:#2563eb;"></div></div><b>23.4</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:27%;background:#16a34a;"></div></div><b>5.4</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:85%;background:#7c3aed;"></div></div><b>17.0</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>‘핵전쟁 날 때 대통령만 타는 비밀 비행기’라는 말만 들어도 남성·어르신·청소년 모두 클릭합니다. 한국엔 제대로 된 15분 해부 롱폼이 드뭅니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>미 국방부(DVIDS) 공개 무료 고화질 사진·영상과 비행기 단면도 그래픽을 저작권 걱정 없이 쓸 수 있습니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=krSePO1QsDI" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=krSePO1QsDI)</a>
+          </div>
+        </div>
+        <div class="p3-item " data-p3-cat="p3-cat-4" data-p3-text="10대 소년들이 미국 최고 보안 시설을 장난처럼 뚫어버린 충격 실화 (230만 뷰) ‘10대가 미국 최고 보안을 뚫었다’는 반전이 엄청난 호기심을 자극합니다. 1시간 57분짜리 원본이라 한국어 20분 롱폼 2~3편 시리즈로 뽑아도 됩니다. 실제 법원 공소장 기록, 보안 구조 도식, 언론 보도 사진 등 팩트 물증이 뚜렷합니다. fern · 230만 뷰 · 1시간 57분">
+          <div class="p3-item-top">
+            <div class="p3-rank" style="background:#fffbeb;color:#d97706;">10위</div>
+            <div class="p3-title-wrap">
+              <div class="p3-title">10대 소년들이 미국 최고 보안 시설을 장난처럼 뚫어버린 충격 실화 (230만 뷰)</div>
+              <div class="p3-meta">Fern · 230만 뷰 · 1시간 57분</div>
+            </div>
+            <div class="p3-score-box">
+              <div class="p3-score-val" style="color:#d97706;">68.1<span>/100</span></div>
+              <div class="p3-score-lbl">Jev 실측 점수</div>
+            </div>
+          </div>
+          <div class="p3-bars">
+            <div class="p3-bar"><span>후킹(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:91%;background:#ef4444;"></div></div><b>27.3</b></div>
+            <div class="p3-bar"><span>물증(30)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:52%;background:#2563eb;"></div></div><b>15.6</b></div>
+            <div class="p3-bar"><span>스토리(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:50%;background:#16a34a;"></div></div><b>10.0</b></div>
+            <div class="p3-bar"><span>적합(20)</span><div class="p3-bar-bg"><div class="p3-bar-fill" style="width:76%;background:#7c3aed;"></div></div><b>15.2</b></div>
+          </div>
+          <div class="p3-explain">
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">💡 찾은 이유 (왜 빨리 터질까?)</div>
+              <p>‘10대가 미국 최고 보안을 뚫었다’는 반전이 엄청난 호기심을 자극합니다. 1시간 57분짜리 원본이라 한국어 20분 롱폼 2~3편 시리즈로 뽑아도 됩니다.</p>
+            </div>
+            <div class="p3-ex-box">
+              <div class="p3-ex-lbl">🎬 보여줄 증거 화면 (1:1 물증)</div>
+              <p>실제 법원 공소장 기록, 보안 구조 도식, 언론 보도 사진 등 팩트 물증이 뚜렷합니다.</p>
+            </div>
+          </div>
+          <div class="p3-foot">
+            <a class="p3-link" href="https://www.youtube.com/watch?v=88itHnh8eMI" target="_blank" rel="noopener">🔗 실제 확인 링크 열기 (https://www.youtube.com/watch?v=88itHnh8eMI)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reference Files -->
+    <footer class="ref-card" id="refs">
+      <h3>📚 참고한 핵심 정본 문서</h3>
+      <ul class="ref-list">
+        <li>📄 <strong>초고속수창-최종전략-및-절대금지-총정리.md</strong> <span>— 4대 루트 · 48시간 신호등 · 절대 금지사항 총망라</span></li>
+        <li>📄 <strong>스위칭쇼츠2기-최신통합세팅.md</strong> <span>— 전체 35강 + 11/19 현장특강 + 최신 통합 세팅</span></li>
+        <li>📄 <strong>영상검수-앞단완결-오감기준.md</strong> <span>— 렌더 전 앞단 완결 &amp; 오감 기준 최상위 규칙</span></li>
+        <li>📄 <strong>소재선정-점수화-표정리.md</strong> <span>— 후킹30·물증30·스토리20·적합20 (100점 정량 기준)</span></li>
+        <li>📄 <strong>영상작업-GPU강제-ESRGAN정본.md</strong> <span>— 맥 GPU(VideoToolbox) 강제 &amp; 초고속 렌더링 정본</span></li>
+      </ul>
+    </footer>
+  </div>
+
+  <script>
+    const STORAGE_KEY = "yt_longform_fast_guide_checks_v1";
+    const checkboxes = Array.from(document.querySelectorAll('.sub-check-item input[type="checkbox"]'));
+
+    function loadState() {
+      try {
+        return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+      } catch {
+        return {};
+      }
+    }
+
+    function saveState(state) {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      } catch {}
+    }
+
+    function updateUI() {
+      const state = loadState();
+      let done = 0;
+
+      checkboxes.forEach((cb) => {
+        const id = cb.dataset.id;
+        cb.checked = !!state[id];
+        cb.closest(".sub-check-item").classList.toggle("checked", cb.checked);
+        if (cb.checked) done++;
+      });
+
+      // Update each step card completion status
+      document.querySelectorAll(".step-card").forEach((card) => {
+        const stepCbs = Array.from(card.querySelectorAll('input[type="checkbox"]'));
+        const allChecked = stepCbs.length > 0 && stepCbs.every((c) => c.checked);
+        card.classList.toggle("completed", allChecked);
+      });
+
+      const total = checkboxes.length;
+      const pct = total ? Math.round((done / total) * 100) : 0;
+      document.getElementById("progressPct").textContent = pct + "%";
+      document.getElementById("progressCount").textContent = `(${done} / ${total} 완료)`;
+      document.getElementById("progressFill").style.width = pct + "%";
+      document.getElementById("celebrateBox").classList.toggle("show", pct === 100);
+    }
+
+    checkboxes.forEach((cb) => {
+      cb.addEventListener("change", () => {
+        const state = loadState();
+        state[cb.dataset.id] = cb.checked;
+        saveState(state);
+        updateUI();
+      });
+    });
+
+    function toggleStep(stepNum) {
+      const card = document.querySelector(`.step-card[data-step="${stepNum}"]`);
+      if (!card) return;
+      const stepCbs = Array.from(card.querySelectorAll('input[type="checkbox"]'));
+      const allChecked = stepCbs.every((c) => c.checked);
+      const state = loadState();
+      stepCbs.forEach((c) => {
+        state[c.dataset.id] = !allChecked;
+      });
+      saveState(state);
+      updateUI();
+    }
+
+    document.getElementById("resetBtn").addEventListener("click", () => {
+      if (confirm("체크한 항목을 모두 초기화할까요?")) {
+        localStorage.removeItem(STORAGE_KEY);
+        updateUI();
+      }
+    });
+
+    updateUI();
+
+    // PART 3 Filter & Search
+    let p3CurrentCat = "all";
+    function p3Filter(cat, btn) {
+      p3CurrentCat = cat;
+      const tabs = document.querySelectorAll(".p3-tab");
+      tabs.forEach((b) => b.classList.remove("active"));
+      if (btn) {
+        btn.classList.add("active");
+      } else {
+        const idx = cat === "all" ? 0 : parseInt(cat.split("-")[2], 10);
+        if (tabs[idx]) tabs[idx].classList.add("active");
+      }
+      p3ApplySearch();
+    }
+    function p3ApplySearch() {
+      const q = (document.getElementById("p3Search").value || "").trim().toLowerCase();
+      document.querySelectorAll(".p3-cat-block").forEach((block) => {
+        const bCat = block.dataset.p3Cat;
+        const showCat = (p3CurrentCat === "all" || p3CurrentCat === bCat);
+        let visCount = 0;
+        block.querySelectorAll(".p3-item").forEach((item) => {
+          const match = !q || (item.dataset.p3Text || "").includes(q);
+          const vis = showCat && match;
+          item.style.display = vis ? "" : "none";
+          if (vis) visCount++;
+        });
+        block.style.display = visCount > 0 ? "" : "none";
+      });
+    }
+
+  </script>
+</body>
+</html>
