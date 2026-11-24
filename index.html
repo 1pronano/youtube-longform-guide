@@ -1719,6 +1719,193 @@
       .p5-bar-row { grid-template-columns: 125px 1fr 44px; font-size: 13px; }
     }
 
+    /* PART 6: Preset vs Kalcopy Decision Guide */
+    .p6-status-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .p6-stat-pill {
+      background: #ffffff;
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      padding: 16px 18px;
+      box-shadow: var(--shadow);
+    }
+    .p6-stat-pill .lbl {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+    .p6-stat-pill .val {
+      font-size: 19px;
+      font-weight: 900;
+      color: var(--text);
+    }
+    .p6-stat-pill .sub {
+      font-size: 13px;
+      color: var(--text-sub);
+      margin-top: 3px;
+    }
+    .p6-table-wrap {
+      overflow-x: auto;
+      border-radius: 16px;
+      border: 1.5px solid var(--border);
+      background: #ffffff;
+      margin-top: 14px;
+    }
+    .p6-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+      min-width: 680px;
+    }
+    .p6-table th {
+      background: #f1f5f9;
+      color: var(--text);
+      font-weight: 900;
+      text-align: left;
+      padding: 13px 15px;
+      border-bottom: 1.5px solid var(--border);
+      white-space: nowrap;
+    }
+    .p6-table td {
+      padding: 13px 15px;
+      border-bottom: 1px solid #eef2f7;
+      vertical-align: top;
+      color: var(--text-sub);
+      line-height: 1.55;
+    }
+    .p6-table tr:last-child td { border-bottom: none; }
+    .p6-table td strong { color: var(--text); }
+    .p6-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12.5px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+    .p6-tag-green { background: #dcfce7; color: #166534; }
+    .p6-tag-yellow { background: #fef9c3; color: #854d0e; }
+    .p6-tag-red { background: #fee2e2; color: #991b1b; }
+    .p6-tag-blue { background: #dbeafe; color: #1e40af; }
+    .p6-tag-purple { background: #ede9fe; color: #5b21b6; }
+    .p6-vs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 18px 0;
+    }
+    .p6-vs-box {
+      border-radius: 18px;
+      padding: 22px;
+      border: 2px solid var(--border);
+    }
+    .p6-vs-box.preset {
+      background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+      border-color: #86efac;
+    }
+    .p6-vs-box.kalcopy {
+      background: linear-gradient(135deg, #f5f3ff 0%, #ffffff 100%);
+      border-color: #c4b5fd;
+    }
+    .p6-vs-title {
+      font-size: 19px;
+      font-weight: 900;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .p6-vs-analogy {
+      font-size: 15px;
+      font-weight: 700;
+      padding: 10px 14px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.85);
+      border: 1px dashed #cbd5e1;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+    .p6-vs-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 15px;
+      color: var(--text-sub);
+    }
+    .p6-hybrid-box {
+      background: linear-gradient(135deg, #eff6ff 0%, #fefce8 100%);
+      border: 2px solid #93c5fd;
+      border-radius: 20px;
+      padding: 24px 26px;
+      margin: 22px 0;
+    }
+    .p6-hybrid-steps {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 14px;
+    }
+    .p6-hybrid-step {
+      background: #ffffff;
+      border: 1.5px solid #dbeafe;
+      border-radius: 14px;
+      padding: 16px 18px;
+    }
+    .p6-hybrid-step h4 {
+      font-size: 16.5px;
+      font-weight: 900;
+      color: #1d4ed8;
+      margin-bottom: 6px;
+    }
+    .p6-opt-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .p6-opt-card {
+      background: #ffffff;
+      border: 2px solid var(--border);
+      border-radius: 18px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      box-shadow: var(--shadow);
+    }
+    .p6-opt-card.best { border-color: #2563eb; background: linear-gradient(180deg, #eff6ff 0%, #ffffff 35%); }
+    .p6-opt-badge {
+      display: inline-block;
+      align-self: flex-start;
+      padding: 4px 11px;
+      border-radius: 999px;
+      font-size: 12.5px;
+      font-weight: 900;
+    }
+    .p6-opt-title {
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--text);
+      line-height: 1.35;
+    }
+    .p6-opt-meta {
+      font-size: 14px;
+      color: var(--text-sub);
+      background: #f8fafc;
+      border-radius: 10px;
+      padding: 10px 12px;
+      border: 1px solid #eef2f7;
+    }
+    @media (max-width: 780px) {
+      .p6-vs-grid, .p6-hybrid-steps, .p6-opt-grid { grid-template-columns: 1fr; }
+    }
+
   </style>
 </head>
 <body>
@@ -1761,6 +1948,7 @@
       <a href="#part3">③ 분야별 추천 소재 40선 (Jev 점수표)</a>
       <a href="#part4">④ 핫한 벤치마킹 에셋 채널 20선 🔥</a>
       <a href="#part5">⑤ 20개 채널 &amp; 분야별 떡상 이유 100% 해부 🔬</a>
+      <a href="#part6">⑥ 지금 바로 만들기: 프리셋 vs 칼카피 결정 가이드 ⚡</a>
       <a href="#refs">📚 정본 파일</a>
     </nav>
 
@@ -5175,6 +5363,300 @@
           <div class="p5-ch-verdict">🏆 다른 채널이랑 딱 이것 때문에 다르다: 조회수가 3만~15만이어도 길이가 4~9시간이라, 1편 시청시간이 남들 10분 영상 20편과 맞먹습니다!</div>
         </article>
     </div>
+
+    <!-- Q5 User Question -->
+    <div class="user-q-card">
+      <div class="user-q-head">
+        <span class="user-q-badge">💬 Q5. 내 질문</span>
+        <span class="user-q-label">지금 바로 만들 수 있는 롱폼 실측 &amp; 현재 프리셋 vs 1등 채널 칼카피 결정 요청</span>
+      </div>
+      <div class="user-q-text">“지금 바로 만들 수 있는게 어떤게 있어? 현재 프리셋으로 해보는 게 좋을지 채널을 칼카피해서 구조 전부를 가져올지 파악해줘”</div>
+    </div>
+
+    <!-- PART 6: Right Now Available vs Kalcopy Decision Guide -->
+    <div class="section-header" id="part6">
+      <div class="section-num" style="background: linear-gradient(135deg, #059669, #2563eb);">6</div>
+      <h2>지금 바로 만들기: 프리셋 vs 칼카피 결정 가이드 ⚡</h2>
+    </div>
+
+    <!-- Real-time Fact-Check Summary Bar -->
+    <div class="p6-status-bar">
+      <div class="p6-stat-pill">
+        <div class="lbl">🔑 내 컴퓨터 API 열쇠 실측</div>
+        <div class="val" style="color:#16a34a;">15종 전부 완비 ✅</div>
+        <div class="sub">타입캐스트 · 일레븐랩스 · 스피치매틱스 · CF누끼 · 에보링크 등 세팅 완료!</div>
+      </div>
+      <div class="p6-stat-pill">
+        <div class="lbl">🌋 볼케이노 롱폼 프리셋 실측</div>
+        <div class="val" style="color:#2563eb;">총 11종 작동 가능</div>
+        <div class="sub">일반 7종(즉시) + 프반 전용 4종(권한 확인) · 43개 전부 AGY 없이 OK!</div>
+      </div>
+      <div class="p6-stat-pill">
+        <div class="lbl">💻 내 맥 전용 로컬 롱폼 엔진</div>
+        <div class="val" style="color:#7c3aed;">5종 장착 완료 ⚡</div>
+        <div class="sub">역사본능 · 스포츠인물 · 스포츠롱폼 · 논스톱 · 운동롱폼 + GPU 고속렌더!</div>
+      </div>
+      <div class="p6-stat-pill">
+        <div class="lbl">🚨 바디캠 롱폼 팩트체크</div>
+        <div class="val" style="color:#dc2626;">롱폼 프리셋 없음!</div>
+        <div class="sub">볼케이노 ‘미국경찰’은 숏폼 전용 → 30분 바디캠은 칼카피 필수!</div>
+      </div>
+    </div>
+
+    <!-- Block 1: What You Can Make TODAY Map -->
+    <article class="card">
+      <div class="card-head">
+        <span class="card-pill" style="background:#dcfce7; color:#166534;">① 실측 지도</span>
+        <h3>지금 당장 오늘 1편을 만들 수 있는 롱폼 무기 지도 🗺️</h3>
+      </div>
+      <p style="margin-bottom:12px; color:var(--text-sub);">
+        추측이 아니라 <strong>지금 내 컴퓨터와 볼케이노 서버를 직접 열어 100% 팩트체크한 결과</strong>예요!
+        열쇠(TTS·자막·누끼)와 맥 GPU 고속 렌더링이 이미 다 꽂혀 있어서, <strong>버튼만 누르면 오늘 바로 1편을 뽑을 수 있는 것</strong>과 <strong>칼카피가 필요한 것</strong>이 딱 갈립니다.
+      </p>
+
+      <div class="p6-table-wrap">
+        <table class="p6-table">
+          <thead>
+            <tr>
+              <th>4대 초고속 분야</th>
+              <th>내 무기 (볼케이노 + 로컬 엔진)</th>
+              <th>지금 바로 가능?</th>
+              <th>준비물 / 초등학생 눈높이 한 줄 설명</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>📺 어르신 거실 TV<br>(정치 · 국뽕 · 역사 · 사연 · 스포츠)</strong></td>
+              <td>
+                <strong>볼케이노:</strong> <code>정치롱</code> · <code>웰컴투코리아롱폼</code> · <code>컬투</code> · <code>인물형 롱폼</code><br>
+                <strong>내 맥 로컬:</strong> <code>yeoksabonneung</code>(역사) · <code>sports-inmul</code>(스포츠 다큐)
+              </td>
+              <td><span class="p6-tag p6-tag-green">🟢 오늘 바로 가능!</span></td>
+              <td><strong>가장 빠르게 1발 쏠 수 있는 곳!</strong> 열쇠·권한 막힘이 0%예요. 뉴스 링크나 인물/역사 주제만 주면 오늘 바로 10~20분 롱폼 1편이 뚝딱 나옵니다.</td>
+            </tr>
+            <tr>
+              <td><strong>🌍 해외 빈집 다큐 · 경제 · 수면</strong></td>
+              <td>
+                <strong>일반 즉시:</strong> <code>VOX</code> · <code>팟캐스트</code>(45개국!) · <code>플리</code>(수면/음악)<br>
+                <strong>프반 전용:</strong> <code>철멍뭉 미스테리</code> · <code>신비한우주사전</code> · <code>책식주의</code>
+              </td>
+              <td>
+                <span class="p6-tag p6-tag-green">🟢 일반 3종 바로</span><br>
+                <span class="p6-tag p6-tag-yellow" style="margin-top:4px;">🟡 프반 3종 권한확인</span>
+              </td>
+              <td>경제·국제정세·대담·수면 플리는 <strong>오늘 바로 가능!</strong> 우주·미스터리·책 해설은 프반 권한이 열려 있으면 추가 열쇠 0개(책식주의도 열쇠 완비)로 즉시 돌립니다.</td>
+            </tr>
+            <tr>
+              <td><strong>🎬 2010년 이전 구작 영화</strong></td>
+              <td>
+                <strong>볼케이노:</strong> <code>영화 리뷰 롱폼</code> (프반 전용)
+              </td>
+              <td><span class="p6-tag p6-tag-yellow">🟡 프반 + 본편파일</span></td>
+              <td><strong>열쇠(일레븐랩스·스피치매틱스)는 이미 완비!</strong> 프반 계정 권한이 있고, 영화 본편 파일(.mp4)이나 본편 링크만 넣으면 바로 제작돼요. (프반 없으면 칼카피)</td>
+            </tr>
+            <tr>
+              <td><strong>🚔 미국 경찰 바디캠 30분 롱폼</strong></td>
+              <td>
+                <strong>볼케이노:</strong> <code>미국경찰</code>은 <strong>숏폼 전용!</strong><br>
+                <strong>롱폼 프리셋:</strong> 없음
+              </td>
+              <td><span class="p6-tag p6-tag-red">🔴 롱폼 없음 → 칼카피</span></td>
+              <td>바디캠 1분 쇼츠는 가능하지만, <strong>돈 되는 30~50분 바디캠 롱폼 틀은 아직 없어요.</strong> <code>제니의 사건기록</code>이나 <code>FOIA Logs</code>를 칼카피해서 내 전용 틀을 만들어야 합니다!</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- Block 2: Preset vs Kalcopy Head-to-Head Comparison -->
+    <article class="card">
+      <div class="card-head">
+        <span class="card-pill" style="background:#ede9fe; color:#5b21b6;">② 전격 비교</span>
+        <h3>🧇 이미 있는 프리셋 바로 쓰기 vs 📐 1등 채널 칼카피해서 구조 전부 가져오기</h3>
+      </div>
+      <p style="color:var(--text-sub); margin-bottom:14px;">
+        초등학생도 3초 만에 이해하는 비유로 정리할게요!
+        <strong>프리셋은 ‘이미 가게에 놓인 붕어빵 틀’</strong>이고, <strong>칼카피는 ‘요즘 줄 서는 1등 맛집 붕어빵 틀을 똑같이 새로 본뜨는 것’</strong>이에요.
+      </p>
+
+      <div class="p6-vs-grid">
+        <div class="p6-vs-box preset">
+          <div class="p6-vs-title">🧇 방법 1: 현재 프리셋 바로 쓰기</div>
+          <div class="p6-vs-analogy">비유: 집에 이미 있는 붕어빵 틀에 반죽만 부어서 <strong>오늘 당장 구워 팔기!</strong></div>
+          <ul class="p6-vs-list">
+            <li>✅ <strong>속도 끝판왕:</strong> 틀 만드는 시간 0초! 오늘 저녁에 바로 1편 업로드 가능.</li>
+            <li>✅ <strong>에러 적음:</strong> 이미 수백 명이 써서 자막·음량·렌더가 안정적이에요.</li>
+            <li>⚠️ <strong>약점 (비슷한 붕어빵):</strong> 볼케이노 쓰는 다른 사람들도 같은 틀을 쓰기 때문에, <strong>제목·소재·썸네일</strong>이 평범하면 “어디서 본 영상”이 될 수 있어요.</li>
+            <li>⚠️ <strong>없는 장르는 못 만듦:</strong> 바디캠 30분, 3시간 수면 합본 같은 최신 유행 틀은 프리셋에 없어요.</li>
+          </ul>
+        </div>
+        <div class="p6-vs-box kalcopy">
+          <div class="p6-vs-title">📐 방법 2: 1등 채널 칼카피 (구조 전부 가져오기)</div>
+          <div class="p6-vs-analogy">비유: 요즘 줄 서는 1등 맛집 틀을 <strong>0초 오프닝부터 자막·호흡까지 똑같이 본떠서 내 전용 틀 만들기!</strong></div>
+          <ul class="p6-vs-list">
+            <li>✅ <strong>조회수 타율 최강:</strong> 지금 유튜브 알고리즘이 좋아하는 최신 1등 구조(0초 훅·길이·리듬)를 통째로 가져옵니다.</li>
+            <li>✅ <strong>빈집 독점:</strong> 남들 프리셋에 없는 <strong>바디캠 30분·수면 다큐·부동산 실거래</strong>를 나만 공장처럼 찍어낼 수 있어요.</li>
+            <li>⚠️ <strong>약점 (첫 1~2일 투자):</strong> 처음 1편 틀(V2 고정본)을 본뜨는 데 <strong>반나절~2일</strong>이 걸려요. (대신 한 번 만들어두면 2편째부턴 6~12분 컷!)</li>
+            <li>⚠️ <strong>주의:</strong> 채널도 안 띄우고 틀만 1주일 동안 깎으면 지쳐서 포기하기 쉬워요.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="p6-table-wrap">
+        <table class="p6-table">
+          <thead>
+            <tr>
+              <th>비교 항목</th>
+              <th>🧇 현재 프리셋 바로 쓰기</th>
+              <th>📐 1등 채널 칼카피 (구조 통째로)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>⚡ 첫 1편 만드는 속도</strong></td>
+              <td><strong>초고속 (2~3시간)</strong> — 오늘 당장 업로드!</td>
+              <td><strong>첫 틀 1~2일</strong> (단, 틀 고정 후 2편째부턴 10분대 사출)</td>
+            </tr>
+            <tr>
+              <td><strong>⏱️ 4,000시간 수창 속도</strong></td>
+              <td><strong>빠름</strong> (구작영화·정치롱·역사·미스터리처럼 이미 검증된 틀일 때)</td>
+              <td><strong>압도적 1등</strong> (바디캠·수면합본·최신 떡상 포맷 그대로 복제 시)</td>
+            </tr>
+            <tr>
+              <td><strong>🛡️ 남들과 겹칠 위험(중복)</strong></td>
+              <td>보통~높음 (소재·썸네일·오프닝을 다르게 뽑아야 살아남음)</td>
+              <td><strong>매우 낮음</strong> (내 전용 틀 + 30% 변형 V2 고정 → 나만의 브랜드)</td>
+            </tr>
+            <tr>
+              <td><strong>🎮 초보자 난이도</strong></td>
+              <td><strong>★☆☆☆☆ (아주 쉬움)</strong> — 소재만 던지면 끝</td>
+              <td><strong>★★★☆☆ (중간)</strong> — <code>클로드눈+클로드귀</code>로 분석 후 1번 세팅</td>
+            </tr>
+            <tr>
+              <td><strong>💰 수창 후 큰돈(자산) 확장</strong></td>
+              <td>기본 수익 OK, 단 비슷한 채널이 늘면 단가·경쟁 심해짐</td>
+              <td><strong>최상!</strong> 내 전용 엔진 1개 = 해외 미러링·다채널 복제 무기</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- Block 3: Verdict per Category + Hybrid Strategy -->
+    <article class="card">
+      <div class="card-head">
+        <span class="card-pill" style="background:#dbeafe; color:#1e40af;">③ 최종 판정</span>
+        <h3>🎯 분야별 딱 부러지는 결론: 어디는 프리셋, 어디는 칼카피?</h3>
+      </div>
+
+      <div class="p6-table-wrap">
+        <table class="p6-table">
+          <thead>
+            <tr>
+              <th>분야</th>
+              <th>최종 추천 선택</th>
+              <th>왜 그게 100배 유리한가? (초등학생 설명)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>🎬 2010년 이전 구작 영화</strong></td>
+              <td><span class="p6-tag p6-tag-green">🧇 현재 프리셋 먼저!</span></td>
+              <td><code>영화 리뷰 롱폼</code>이 이미 100% 전용 기계로 완성돼 있어요! 굳이 새로 만들 필요 없이 <strong>프반 권한만 되면 오늘 바로 1발 쏘는 게 100배 유리</strong>합니다.</td>
+            </tr>
+            <tr>
+              <td><strong>📺 어르신 TV (정치 · 국뽕 · 역사 · 인물)</strong></td>
+              <td><span class="p6-tag p6-tag-green">🧇 현재 프리셋 먼저!</span></td>
+              <td><code>정치롱</code>·<code>웰컴투코리아롱폼</code>·<code>인물형 롱폼</code>·로컬 <code>yeoksabonneung</code>이 이미 다 있어요! <strong>먼저 프리셋으로 48시간 신호등 간보기</strong>를 해보고, 터지면 그때 1등 채널 스타일을 섞으세요.</td>
+            </tr>
+            <tr>
+              <td><strong>🚔 미국 경찰 바디캠 30분</strong></td>
+              <td><span class="p6-tag p6-tag-purple">📐 무조건 칼카피!</span></td>
+              <td>볼케이노에 30분 바디캠 롱폼 틀이 아예 없어요! <code>제니의 사건기록</code>(한국어)이나 <code>FOIA Logs</code>(영어) 1편을 <strong>칼카피해서 내 전용 틀</strong>을 뽑아야 4,000시간 원샷이 터집니다.</td>
+            </tr>
+            <tr>
+              <td><strong>🌙 수면 미스터리 합본 (1~3시간) · 부동산/경제</strong></td>
+              <td><span class="p6-tag p6-tag-purple">📐 칼카피 강력 추천!</span></td>
+              <td><code>철멍뭉 미스테리</code>·<code>VOX</code>로 단편은 되지만, <strong>1시간~3시간 수면 합본(Nariman·미스터리보고서)</strong>이나 <strong>강남 부동산 차트 설명</strong>은 1등 채널 구조를 칼카피해야 시청시간이 10배로 폭발합니다.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- The Smartest 2-Step Hybrid Strategy -->
+      <div class="p6-hybrid-box">
+        <div style="font-size:20px; font-weight:900; color:#1e3a8a; margin-bottom:8px;">
+          🏆 결론: 둘 중 하나만 고르지 마세요! 가장 똑똑한 ‘2단계 하이브리드 작전’
+        </div>
+        <p style="font-size:15.5px; color:#1e293b;">
+          수창 게임에서 제일 바보 같은 실수는 <strong>“칼카피 틀 완벽하게 만든다”고 1주일 동안 영상 0개 올리는 것</strong>이에요!
+          반대로 <strong>프리셋만 쓰다가 남들과 똑같아지는 것</strong>도 아깝죠. 그래서 <strong>오늘 바로 움직이는 투트랙</strong>이 정답입니다!
+        </p>
+        <div class="p6-hybrid-steps">
+          <div class="p6-hybrid-step">
+            <h4>⚡ 1단계 (오늘 ~ 3일차): 있는 프리셋으로 1호 채널 먼저 발사!</h4>
+            <p style="font-size:14.5px; color:var(--text-sub);">
+              고민 0초! <strong>지금 바로 돌아가는 프리셋</strong>(<code>영화 리뷰 롱폼</code> · <code>정치롱</code> · <code>VOX</code> · 로컬 <code>역사본능</code> 중 택1)으로 <strong>오늘 1편을 무조건 올려서 48시간 신호등 테스트</strong>를 먼저 돌립니다.
+            </p>
+          </div>
+          <div class="p6-hybrid-step">
+            <h4>📐 2단계 (4일차 ~ 2주차): 빈집 1등 채널 1개 칼카피로 ‘전용 황금 틀’ 확보!</h4>
+            <p style="font-size:14.5px; color:var(--text-sub);">
+              1호 채널이 유튜브에 올라가 돌아가는 동안, <strong>바디캠 30분(<code>제니의 사건기록</code>)</strong> 또는 <strong>수면 미스터리(<code>미스터리보고서</code>)</strong> 중 1개를 골라 <strong>칼카피(좌우 비교 V2 고정)</strong>로 나만의 독점 공장을 세웁니다!
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Block 4: TOP 3 Action Options for TODAY -->
+    <article class="card">
+      <div class="card-head">
+        <span class="card-pill" style="background:#fef3c7; color:#92400e;">④ 오늘 바로 실행</span>
+        <h3>🚀 오늘 당장 시작할 수 있는 TOP 3 실행 옵션 (하나만 고르세요!)</h3>
+      </div>
+
+      <div class="p6-opt-grid">
+        <div class="p6-opt-card best">
+          <span class="p6-opt-badge" style="background:#2563eb; color:#ffffff;">⭐ 옵션 A · 가장 빠름 (오늘 2시간 컷)</span>
+          <div class="p6-opt-title">일반 프리셋 / 로컬 엔진으로 오늘 바로 1편 발사!</div>
+          <p style="font-size:14.5px; color:var(--text-sub);">
+            권한 막힘 0%! <strong><code>정치롱</code> · <code>웰컴투코리아롱폼</code> · <code>VOX</code> · 로컬 <code>역사본능</code></strong> 중 1개로 오늘 밤 바로 업로드해 48시간 신호등을 켜는 작전입니다.
+          </p>
+          <div class="p6-opt-meta">
+            <strong>⏱️ 소요시간:</strong> 오늘 2~3시간<br>
+            <strong>🎒 준비물:</strong> 주제/뉴스 링크 1개만!<br>
+            <strong>🎯 예상 결과:</strong> 오늘 바로 1호 채널 첫 1발 간보기 완료!
+          </div>
+        </div>
+
+        <div class="p6-opt-card">
+          <span class="p6-opt-badge" style="background:#f59e0b; color:#ffffff;">🎬 옵션 B · 프반 보유 시 (수창 최속)</span>
+          <div class="p6-opt-title">구작 영화 / 미스터리 프리셋으로 4,000시간 원샷 노리기!</div>
+          <p style="font-size:14.5px; color:var(--text-sub);">
+            볼케이노 프반 권한이 있다면 <strong><code>영화 리뷰 롱폼</code></strong>(2010년 이전 구작) 또는 <strong><code>철멍뭉 미스테리</code> · <code>신비한우주사전</code></strong>으로 바로 1편 제작!
+          </p>
+          <div class="p6-opt-meta">
+            <strong>⏱️ 소요시간:</strong> 오늘 2~4시간<br>
+            <strong>🎒 준비물:</strong> 프반 권한 + (영화 시 본편 mp4/링크)<br>
+            <strong>🎯 예상 결과:</strong> 터지면 1~3편 만에 4,000시간 원샷 통과!
+          </div>
+        </div>
+
+        <div class="p6-opt-card">
+          <span class="p6-opt-badge" style="background:#7c3aed; color:#ffffff;">📐 옵션 C · 빈집 독점 (1~2일 투자)</span>
+          <div class="p6-opt-title">1등 채널 통째로 칼카피해서 ‘나만의 전용 틀’ 만들기!</div>
+          <p style="font-size:14.5px; color:var(--text-sub);">
+            프리셋에 없는 <strong>바디캠 30분(<code>제니의 사건기록</code>·<code>FOIA Logs</code>)</strong>이나 <strong>수면 미스터리 합본(<code>Nariman</code>)</strong>을 <code>클로드눈+클로드귀</code>로 100% 분석해 내 전용 틀(V2) 구축!
+          </p>
+          <div class="p6-opt-meta">
+            <strong>⏱️ 소요시간:</strong> 첫 틀 1~2일 (이후 편당 10분대)<br>
+            <strong>🎒 준비물:</strong> 1등 채널 영상 링크 2~3개<br>
+            <strong>🎯 예상 결과:</strong> 남들 못 따라오는 독점 빈집 공장 완성!
+          </div>
+        </div>
+      </div>
+    </article>
 
     <!-- Reference Files -->
     <footer class="ref-card" id="refs">
